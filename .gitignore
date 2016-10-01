@@ -1,5 +1,5 @@
 #bower_components
-dist
+#dist
 node_modules
 #build
 .idea/
