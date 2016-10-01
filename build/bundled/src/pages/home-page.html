@@ -1,0 +1,23 @@
+<html><head><meta charset="UTF-8"><link rel="import" href="../hoverboard-app.html"></head><body><dom-module id="home-page">
+
+  <template>
+
+    <statistics-block app="{{app}}" cascaded=""></statistics-block>
+    <featured-people app="{{app}}" people="{{people}}" cascaded=""></featured-people>
+    <featured-videos app="{{app}}" cascaded=""></featured-videos>
+    <call-to-action app="{{app}}" cascaded=""></call-to-action>
+    <about-block app="{{app}}" cascaded=""></about-block>
+    <photo-block app="{{app}}" cascaded=""></photo-block>
+    <tickets-block app="{{app}}" cascaded=""></tickets-block>
+    <latest-posts app="{{app}}" posts="{{posts}}" cascaded=""></latest-posts>
+    <social-feed app="{{app}}" cascaded=""></social-feed>
+    <map-block app="{{app}}" selected="{{selected}}" cascaded=""></map-block>
+    <logos-block app="{{app}}" cascaded=""></logos-block>
+    <footer-block app="{{app}}" cascaded=""></footer-block>
+
+  </template>
+
+  <script>!function(){"use strict";Polymer({is:"home-page",behaviors:[Polymer.NeonSharedElementAnimatableBehavior,HOVERBOARD.PageBehavior],properties:{people:{type:Array},posts:{type:Array},logos:{type:Array},videos:{type:Array},animationConfig:{type:Object,value:function(){var a=Polymer.dom(this.root).querySelectorAll("[cascaded]"),e=Array.prototype.slice.call(a);return{entry:[{name:"cascaded-animation",animation:"transform-animation",transformFrom:"translate3d(0, 100%, 0)",nodes:e,timing:{delay:500}},{name:"fade-in-animation",animation:"fade-in-animation",node:this,timing:{delay:500}}],exit:[{name:"cascaded-animation",animation:"transform-animation",transformTo:"translate3d(0, 100%, 0)",nodes:e},{name:"fade-out-animation",animation:"fade-out-animation",node:this}]}}}}})}();</script>
+
+</dom-module>
+</body></html>

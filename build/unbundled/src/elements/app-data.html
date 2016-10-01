@@ -1,0 +1,19 @@
+<html><head><link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<link rel="import" href="../../bower_components/iron-ajax/iron-ajax.html">
+
+
+</head><body><dom-module id="app-data">
+  <template>
+    <iron-ajax auto="" url="[[configSource]]" handle-as="json" last-response="{{app.data}}"></iron-ajax>
+    <iron-ajax auto="" url="[[speakersSource]]" handle-as="json" last-response="{{_speakersRaw}}"></iron-ajax>
+    <iron-ajax auto="" url="[[sessionsSource]]" handle-as="json" last-response="{{sessions}}"></iron-ajax>
+    <iron-ajax auto="" url="[[postsSource]]" handle-as="json" on-response="_reversePosts"></iron-ajax>
+    <iron-ajax auto="" url="[[partnersSource]]" handle-as="json" last-response="{{app.partners}}"></iron-ajax>
+    <iron-ajax auto="" url="[[scheduleSource]]" handle-as="json" last-response="{{_scheduleRaw}}"></iron-ajax>
+    <iron-ajax auto="" url="[[teamSource]]" handle-as="json" last-response="{{app.team}}"></iron-ajax>
+    <iron-ajax auto="" url="[[videosSource]]" handle-as="json" last-response="{{app.videos}}"></iron-ajax>
+  </template>
+  <script>!function(){"use strict";Polymer({is:"app-data",properties:{app:{type:Object,notify:!0},configSource:{type:String,value:"data/hoverboard.config.json"},speakersSource:{type:String,value:"data/speakers.json"},sessionsSource:{type:String,value:"data/sessions.json"},postsSource:{type:String,value:"data/blog.json"},partnersSource:{type:String,value:"data/partners.json"},scheduleSource:{type:String,value:"data/schedule.json"},teamSource:{type:String,value:"data/team.json"},videosSource:{type:String,value:"data/videos.json"},speakers:{type:Array,notify:!0},sessions:{type:Object,notify:!0},posts:{type:Array,notify:!0},schedule:{type:Array,notify:!0},_speakersRaw:{type:Object},_scheduleRaw:{type:Array}},observers:["_generateSchedule(_speakersRaw, sessions, _scheduleRaw)"],ready:function(){this.app=this.app||{}},_generateSchedule:function(){this._scheduleRaw.tags=[];for(var e=0,s=this._scheduleRaw.length;e<s;e++){var t=this._scheduleRaw[e];this._scheduleRaw[e].tags=[];for(var a=0,r=t.timeslots.length;a<r;a++)for(var i=t.timeslots[a],n=0,o=i.sessions.length;n<o;n++)for(var p=0,u=i.sessions[n].length;p<u;p++){var d=this._getSession(i.sessions[n][p],t,e,this._scheduleRaw);d&&!d.track&&(d.track=t.tracks[n]),d.startTime=i.startTime,d.endTime=u>1?this._getEndTime(t.date,i.startTime,i.endTime,u,p+1):i.endTime,d.dateReadable=t.dateReadable,this._scheduleRaw[e].timeslots[a].sessions[n][p]=d}}this.set("schedule",this._scheduleRaw),this.set("speakers",this._speakersRaw)},_getSession:function(e,s,t,a){var r=this.sessions[e];r.mainTag=r.tags?r.tags[0]:"General",r.day=t+1,s.tags.indexOf(r.mainTag)<0&&s.tags.push(r.mainTag),a.tags.indexOf(r.mainTag)<0&&a.tags.push(r.mainTag);var i=[];if(r.speakers)for(var n=0,o=r.speakers.length;n<o;n++)if(!r.speakers[n].id){r.speakers[n]=this._speakersRaw[r.speakers[n]];var p=JSON.parse(JSON.stringify(r));delete p.speakers,r.speakers[n]&&(r.speakers[n].sessions||(r.speakers[n].sessions=[]),r.speakers[n].sessions.push(p),i.push(r.speakers[n].name))}return r},_getEndTime:function(e,s,t,a,r){var i=(new Date).toString().match(/([A-Z]+[\+-][0-9]+.*)/)[1],n=new Date(e+" "+s+" "+i).getTime(),o=new Date(e+" "+t+" "+i).getTime(),p=Math.floor((o-n)/a),u=new Date(n+p*r);return u.getHours()+":"+u.getMinutes()},_reversePosts:function(e){this.posts=e.detail.response.reverse()}})}();</script>
+</dom-module>
+</body></html>

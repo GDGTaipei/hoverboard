@@ -1,0 +1,6 @@
+<html><head><link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<link rel="import" href="../../bower_components/app-localize-behavior/app-localize-behavior.html">
+
+<script>!function(){"use strict";HOVERBOARD.LocalizeBehaviorImpl={properties:{app:{type:Object,notify:!0,value:function(){return{}}}},listeners:{"app-resources-loaded":"_onLocalesLoaded"},attached:function(){this.loadAppResources(this.language)},observers:["setLanguage(app.lang)"],loadAppResources:function(e){if(e){var s="/data/"+e+"/resources.json";this.loadResources(this.resolveUrl(s))}},setLanguage:function(e){e&&(this.app.resources&&!this.app.resources[e]?this.loadAppResources(e):this.set("language",e))},__onRequestResponse:function(e){if(e.response&&this.app){var s=this.app.resources||{};s[this.app.lang]=e.response,this.set("resources",s),this.set("app.resources",s),this.fire("app-resources-loaded")}},_onLocalesLoaded:function(e){e.stopPropagation(),this.set("language",this.app.lang)}},HOVERBOARD.LocalizeBehavior=[Polymer.AppLocalizeBehavior,HOVERBOARD.LocalizeBehaviorImpl]}();</script>
+</head><body></body></html>

@@ -1,0 +1,328 @@
+<html><head><meta charset="UTF-8"><link rel="import" href="../hoverboard-app.html"></head><body><div hidden="" by-vulcanize=""><dom-module id="paper-tooltip" assetpath="../../bower_components/paper-tooltip/">
+  <template>
+    <style>
+      :host {
+        display: block;
+        position: absolute;
+        outline: none;
+        z-index: 1002;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        cursor: default;
+      }
+
+      #tooltip {
+        display: block;
+        outline: none;
+        @apply(--paper-font-common-base);
+        font-size: 10px;
+        line-height: 1;
+
+        background-color: var(--paper-tooltip-background, #616161);
+        opacity: var(--paper-tooltip-opacity, 0.9);
+        color: var(--paper-tooltip-text-color, white);
+
+        padding: 8px;
+        border-radius: 2px;
+
+        @apply(--paper-tooltip);
+      }
+
+      /* Thanks IE 10. */
+      .hidden {
+        display: none !important;
+      }
+    </style>
+
+    <div id="tooltip" class="hidden">
+      <content></content>
+    </div>
+  </template>
+
+  <script>Polymer({is:"paper-tooltip",hostAttributes:{role:"tooltip",tabindex:-1},behaviors:[Polymer.NeonAnimationRunnerBehavior],properties:{for:{type:String,observer:"_findTarget"},manualMode:{type:Boolean,value:!1,observer:"_manualModeChanged"},position:{type:String,value:"bottom"},fitToVisibleBounds:{type:Boolean,value:!1},offset:{type:Number,value:14},marginTop:{type:Number,value:14},animationDelay:{type:Number,value:500},animationConfig:{type:Object,value:function(){return{entry:[{name:"fade-in-animation",node:this,timing:{delay:0}}],exit:[{name:"fade-out-animation",node:this}]}}},_showing:{type:Boolean,value:!1}},listeners:{"neon-animation-finish":"_onAnimationFinish"},get target(){var t,i=Polymer.dom(this).parentNode,e=Polymer.dom(this).getOwnerRoot();return t=this.for?Polymer.dom(e).querySelector("#"+this.for):i.nodeType==Node.DOCUMENT_FRAGMENT_NODE?e.host:i},attached:function(){this._findTarget()},detached:function(){this.manualMode||this._removeListeners()},show:function(){this._showing||""!==Polymer.dom(this).textContent.trim()&&(this.cancelAnimation(),this._showing=!0,this.toggleClass("hidden",!1,this.$.tooltip),this.updatePosition(),this.animationConfig.entry[0].timing=this.animationConfig.entry[0].timing||{},this.animationConfig.entry[0].timing.delay=this.animationDelay,this._animationPlaying=!0,this.playAnimation("entry"))},hide:function(){if(this._showing){if(this._animationPlaying)return this.cancelAnimation(),this._showing=!1,void this._onAnimationFinish();this._showing=!1,this._animationPlaying=!0,this.playAnimation("exit")}},updatePosition:function(){if(this._target&&this.offsetParent){var t=this.offset;14!=this.marginTop&&14==this.offset&&(t=this.marginTop);var i,e,n=this.offsetParent.getBoundingClientRect(),s=this._target.getBoundingClientRect(),o=this.getBoundingClientRect(),h=(s.width-o.width)/2,a=(s.height-o.height)/2,r=s.left-n.left,l=s.top-n.top;switch(this.position){case"top":i=r+h,e=l-o.height-t;break;case"bottom":i=r+h,e=l+s.height+t;break;case"left":i=r-o.width-t,e=l+a;break;case"right":i=r+s.width+t,e=l+a}this.fitToVisibleBounds?(i+o.width>window.innerWidth?(this.style.right="0px",this.style.left="auto"):(this.style.left=Math.max(0,i)+"px",this.style.right="auto"),e+o.height>window.innerHeight?(this.style.bottom="0px",this.style.top="auto"):(this.style.top=Math.max(0,e)+"px",this.style.bottom="auto")):(this.style.left=i+"px",this.style.top=e+"px")}},_addListeners:function(){this._target&&(this.listen(this._target,"mouseenter","show"),this.listen(this._target,"focus","show"),this.listen(this._target,"mouseleave","hide"),this.listen(this._target,"blur","hide"),this.listen(this._target,"tap","hide")),this.listen(this,"mouseenter","hide")},_findTarget:function(){this.manualMode||this._removeListeners(),this._target=this.target,this.manualMode||this._addListeners()},_manualModeChanged:function(){this.manualMode?this._removeListeners():this._addListeners()},_onAnimationFinish:function(){this._animationPlaying=!1,this._showing||this.toggleClass("hidden",!0,this.$.tooltip)},_removeListeners:function(){this._target&&(this.unlisten(this._target,"mouseenter","show"),this.unlisten(this._target,"focus","show"),this.unlisten(this._target,"mouseleave","hide"),this.unlisten(this._target,"blur","hide"),this.unlisten(this._target,"tap","hide")),this.unlisten(this,"mouseenter","hide")}});</script>
+</dom-module>
+<dom-module id="speaker-details" assetpath="../elements/">
+
+  <template>
+
+    <style include="shared-styles dialog-styles"></style>
+
+    <paper-scroll-header-panel id="scrollHeaderPanel" condenses="{{app.isPhoneSize}}" no-reveal="{{!app.isPhoneSize}}">
+      <paper-toolbar class="tall">
+        <a href="/speakers">
+          <paper-icon-button class="back-button" dialog-dismiss="" icon="arrow-back"></paper-icon-button>
+        </a>
+        <div class="middle fallback-image-wrapper" hidden$="{{app.isPhoneSize}}">
+          <iron-image class="fallback-image" src="/images/logo-white.svg" alt="[[localize('title')]]"></iron-image>
+        </div>
+        <div id="title" class="bottom title toolbar-title" hidden$="{{!app.isPhoneSize}}">[[speaker.name]]</div>
+      </paper-toolbar>
+      <div class="content">
+        <div class="metadata-wrapper">
+          <div class="main-info">
+            <div class="photo" style$="background-image: url([[speaker.photoUrl]])" hidden$="{{app.isPhoneSize}}"></div>
+            <div class="info">
+              <h1 class="main-title" hidden$="{{app.isPhoneSize}}">[[speaker.name]]</h1>
+              <div class="meta highlight">[[speaker.company]], [[speaker.country]]</div>
+              <div class="meta">
+                <template is="dom-repeat" items="[[speaker.badges]]" as="badge">
+                  <a class="badge" href$="[[badge.link]]" target="_blank" rel="noopener noreferrer">[[badge.description]]</a>
+                </template>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <marked-element markdown="[[speaker.bio]]">
+          <div class="markdown-html"></div>
+        </marked-element>
+
+        <div class="actions">
+          <template is="dom-repeat" items="[[speaker.socials]]" as="social">
+            <a href$="[[social.link]]" target="_blank" rel="noopener noreferrer">
+              <paper-icon-button class="action" icon$="icons:{{social.icon}}"></paper-icon-button>
+            </a>
+          </template>
+        </div>
+
+      </div>
+
+      <template is="dom-if" if="{{speaker.sessions.length}}">
+        <div class="sections-wrapper content">
+          <h4 class="block-title">[[localize('sessions')]]</h4>
+          <div class="sections">
+            <template is="dom-repeat" items="[[speaker.sessions]]" as="session">
+              <div class="section">
+                <div class="section-info">
+                  <h3 class="section-title">[[session.title]]</h3>
+                  <div class="badges">
+                    <template is="dom-repeat" items="[[session.tags]]" as="tag">
+                      <span class="badge" target="_blank" rel="noopener noreferrer">[[tag]]</span>
+                    </template>
+                  </div>
+                  <truncate-marked-text text="[[session.description]]" characters="220" break-last-word=""></truncate-marked-text>
+                  <a class="read-more" href$="/schedule/day[[session.day]]?sessionId=[[session.id]]" dialog-dismiss="">[[localize('read-more')]]</a>
+
+                </div>
+              </div>
+            </template>
+          </div>
+        </div>
+      </template>
+    </paper-scroll-header-panel>
+
+  </template>
+
+  <script>!function(){"use strict";Polymer({is:"speaker-details",behaviors:[Polymer.PaperDialogBehavior,Polymer.NeonAnimationRunnerBehavior,HOVERBOARD.LocalizeBehavior,HOVERBOARD.UtilsBehavior],properties:{speaker:{type:Object,observer:"_speakerChanged",notify:!0}},listeners:{"neon-animation-finish":"_onNeonAnimationFinish"},ready:function(){var e=this.$.title;addEventListener("paper-header-transform",function(r){var o=r.detail,t=o.height-o.condensedHeight,i=40*(o.y/t>1?1:o.y/t);Polymer.Base.translate3d(i+"px",0,0,e)})},_speakerChanged:function(){var e=this._generateClass(this.speaker.tags[0]);this.customStyle["--paper-scroll-header-panel-color"]="var(--"+e+")",this._previousBrowserColor=HOVERBOARD.Util.getMetaThemeColor(),HOVERBOARD.Util.setMetaThemeColor(this.getComputedStyleValue("--"+e)),this.app.isPhoneSize&&(this.$.scrollHeaderPanel.$.headerBg.style.background="linear-gradient(to top, rgba(0, 0, 0, 0.4) -10%, rgba(0, 0, 0, 0.1) 50%), url("+this.speaker.photoUrl+") 0 / cover no-repeat"),this.updateStyles()},_renderOpened:function(){this.withBackdrop&&!this.app.isPhoneSize&&this.backdropElement.open(),this.playAnimation("entry"),this.async(function(){this.$.scrollHeaderPanel.scroll(1,!0),this.$.scrollHeaderPanel.notifyResize()}),HOVERBOARD.Analytics.trackEvent("speaker","open details",this.speaker.name)},_renderClosed:function(){HOVERBOARD.Util.setMetaThemeColor(this._previousBrowserColor),this.backdropElement.close(),this.playAnimation("exit")},_onNeonAnimationFinish:function(){this.opened?(Polymer.IronDropdownScrollManager.pushScrollLock(this.$.scrollHeaderPanel),this._finishRenderOpened()):(Polymer.IronDropdownScrollManager.removeScrollLock(this.$.scrollHeaderPanel),this._finishRenderClosed())}})}();</script>
+
+</dom-module>
+</div><dom-module id="speakers-page">
+
+  <template>
+
+    <style include="shared-styles">
+      :host {
+        display: block;
+        --grid-gutter: 8px;
+        --colums-number: 3;
+        --general: #bdbdbd;
+      }
+
+      .speakers-container {
+        @apply(--layout-vertical);
+        @apply(--layout-wrap);
+      }
+
+      .speaker {
+        @apply(--layout-horizontal);
+        width: 100%;
+        margin: var(--grid-gutter) 0;
+      }
+
+      .card {
+        @apply(--layout-flex);
+        @apply(--layout-vertical);
+        background: #FFFFFF;
+        color: var(--primary-text-color);
+      }
+
+      .card-content {
+        @apply(--layout-vertical);
+        @apply(--layout-flex-auto);
+        padding: 16px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+
+      .bio {
+        color: var(--primary-text-color);
+      }
+
+      .card-actions {
+        border-top: 1px solid #e8e8e8;
+        padding: 5px 16px;
+        position: relative;
+      }
+
+      .header {
+        position: relative;
+        height: 256px;
+      }
+
+      .photo {
+        @apply(--layout-fit);
+      }
+
+      .photo-overlay {
+        @apply(--layout-fit);
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 4%, rgba(0, 0, 0, 0) 50%);
+      }
+
+      .badges {
+        margin: 0;
+        padding: 16px;
+        position: relative;
+        list-style: none;
+        text-align: right;
+      }
+
+      .badge {
+        display: inline-block;
+      }
+
+      .badge:not(:last-of-type):after {
+        color: rgba(255, 255, 255, 0.8);
+        vertical-align: middle;
+        font-size: 14px;
+        content: "\2022";
+      }
+
+      .badge a {
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .bottom-image-text {
+        padding: 16px;
+        position: absolute;
+        bottom: 0;
+        color: #FFFFFF;
+      }
+
+      .name {
+        font-size: 24px;
+      }
+
+      .title {
+        margin-top: -5px;
+        display: block;
+        font-size: 14px;
+      }
+
+      .social-icon {
+        color: var(--secondary-text-color);
+      }
+
+      @media (min-width: 601px) {
+        .speakers-container {
+          @apply(--layout-horizontal);
+        }
+
+        .speaker {
+          width: calc(100% / 2 - 2 * var(--grid-gutter));
+          margin: var(--grid-gutter);
+        }
+
+      }
+
+      @media (min-width: 961px) {
+        .speaker {
+          width: calc(100% / 3 - 2 * var(--grid-gutter));
+        }
+
+      }
+
+      .tags {
+        font-size: 14px;
+        color: var(--primary-text-color);
+      }
+
+      .tag {
+        margin: 2px 0 0 2px;
+        padding: 1px 4px;
+        color: #fff;
+        display: inline-block;
+        font-size: 12px;
+        border-radius: 2px;
+        background: var(--general);
+      }
+
+      .markdown-html {
+        font-size: 16px;
+      }
+
+      .company-logo {
+        margin: 0 auto 10px;
+        width: 110px;
+        height: 25px;
+      }
+    </style>
+
+    <app-route route="{{route}}" pattern="/:speakerId" data="{{routeData}}"></app-route>
+
+    <div class="container speakers-container">
+      <template is="dom-repeat" items="[[_toArray(speakers)]]" as="speaker" on-dom-change="_updateCascadedNodes">
+        <div class="speaker" cascaded="">
+          <paper-material class="card">
+            <a href$="/speakers/[[speaker.id]]/" class="header">
+              <iron-image src="[[speaker.photoUrl]]" class="photo placeholder-color" preload="" fade="" sizing="cover"></iron-image>
+              <div class="photo-overlay"></div>
+              <ul class="badges">
+                <template is="dom-repeat" items="[[speaker.badges]]" as="badge">
+                  <li class="badge">
+                    <a href$="[[badge.link]]" target="_blank" rel="noopener noreferrer">[[badge.name]]</a>
+                    <paper-tooltip>[[badge.description]]</paper-tooltip>
+                  </li>
+                </template>
+              </ul>
+              <div class="bottom-image-text">
+                <span class="name">[[speaker.name]]</span>
+                <span class="title">[[speaker.country]]</span>
+              </div>
+            </a>
+            <a href$="/speakers/[[speaker.id]]/" class="card-content">
+              <iron-image class="company-logo" src="{{speaker.companyLogo}}" sizing="contain"></iron-image>
+              <div class="tags">Skills:
+                <template is="dom-repeat" items="[[speaker.tags]]" as="tag">
+                  <span class="tag" style$="{{_getCustomStyleValue(tag)}}" target="_blank" rel="noopener noreferrer">[[tag]]</span>
+                </template>
+              </div>
+              <marked-element class="details-text" markdown="[[speaker.shortBio]]">
+                <div class="markdown-html"></div>
+              </marked-element>
+            </a>
+            <div class="card-actions">
+              <template is="dom-repeat" items="[[speaker.socials]]" as="social">
+                <a href="[[social.link]]" target="_blank" rel="noopener noreferrer">
+                  <paper-icon-button class="social-icon" icon$="icons:{{social.icon}}"></paper-icon-button>
+                </a>
+              </template>
+            </div>
+          </paper-material>
+        </div>
+      </template>
+    </div>
+    <footer-block app="{{app}}" cascaded=""></footer-block>
+
+    <speaker-details id="speakerDetails" app="{{app}}" speaker="{{_selectedSpeaker}}" entry-animation="scale-up-animation" exit-animation="fade-out-animation" with-backdrop="">
+    </speaker-details>
+
+  </template>
+
+  <script>!function(){"use strict";Polymer({is:"speakers-page",behaviors:[Polymer.NeonSharedElementAnimatableBehavior,HOVERBOARD.PageBehavior,HOVERBOARD.UtilsBehavior],properties:{route:{type:Object,notify:!0},routeData:{type:Object},speakerRouteData:{type:Object},speakers:{type:Object},_selectedSpeaker:Object,animationConfig:{type:Object,value:function(){return{entry:[{name:"fade-in-animation",animation:"fade-in-animation",node:this,timing:{delay:500}}],exit:[{name:"fade-out-animation",animation:"fade-out-animation",node:this}]}}}},observers:["_routePageChanged(routeData.speakerId)"],listeners:{"iron-overlay-closed":"_resetSpeakerIdParam"},_routePageChanged:function(e){if(e&&this.selected){var t=this.speakers[e];t&&Polymer.RenderStatus.afterNextRender(this,function(){this._selectedSpeaker=t,this.$.speakerDetails.open()}.bind(this))}},_updateCascadedNodes:function(){var e=Polymer.dom(this.root).querySelectorAll("[cascaded]"),t=Array.prototype.slice.call(e);this.animationConfig.entry.push({name:"cascaded-animation",animation:"transform-animation",transformFrom:"translate3d(0, 100%, 0)",timing:{delay:500},nodes:t}),this.animationConfig.exit.push({name:"cascaded-animation",animation:"transform-animation",transformTo:"translate3d(0, 100%, 0)",nodes:t})},_getCustomStyleValue:function(e){return"background-color: "+this.getComputedStyleValue("--"+this._generateClass(e))||this.getComputedStyleValue("--general")},_resetSpeakerIdParam:function(){this.set("routeData.speakerId",null)}})}();</script>
+
+</dom-module>
+</body></html>

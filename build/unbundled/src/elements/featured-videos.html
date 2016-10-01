@@ -1,0 +1,156 @@
+<html><head><link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="../../bower_components/iron-image/iron-image.html">
+<link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../../bower_components/paper-card/paper-card.html">
+
+<link rel="import" href="../styles/shared-styles.html">
+<link rel="import" href="../behaviors/utils-behavior.html">
+<link rel="import" href="../behaviors/localize-behavior.html">
+
+
+</head><body><dom-module id="featured-videos">
+
+  <template>
+
+    <style include="shared-styles">
+      :host {
+        display: block;
+        background: var(--default-primary-color);
+        color: var(--text-primary-color);
+        --iron-icon-fill-color: var(--primary-text-color);
+        --paper-card-background-color: #fff;
+        overflow: hidden;
+      }
+
+      .videos-header {
+        @apply(--layout-vertical);
+        @apply(--layout-justified);
+      }
+
+      .heading {
+        line-height: 1.3;
+      }
+
+      .controls {
+        margin-bottom: 10px;
+      }
+
+      .videos {
+        @apply(--layout-horizontal);
+        transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
+        will-change: transition;
+      }
+
+      .video-item {
+        @apply(--layout);
+        padding-right: 24px;
+        width: 100%;
+        min-width: 100%;
+      }
+
+      paper-card {
+        width: 100%;
+      }
+
+      .header {
+        height: 200px;
+        position: relative;
+      }
+
+      .thumbnail {
+        @apply(--layout-fit);
+      }
+
+      .play-video {
+        @apply(--layout-fit);
+        @apply(--layout-vertical);
+        @apply(--layout-center-center);
+        margin: 0 auto;
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0.15);
+      }
+
+      .play-icon {
+        --iron-icon-width: 48px;
+        --iron-icon-height: 48px;
+        --iron-icon-fill-color: #fff;
+      }
+
+      .title {
+        @apply(--ellipsis);
+        color: var(--primary-text-color);
+      }
+
+      .speakers {
+        @apply(--ellipsis);
+        color: var(--secondary-text-color);
+        font-size: 14px;
+      }
+
+      .block-link {
+        margin-top: 25px;
+        display: block;
+        color: inherit;
+        font-size: .9em;
+      }
+
+      @media (min-width: 601px) {
+        .videos-header {
+          @apply(--layout-horizontal);
+        }
+
+        .video-item {
+          width: 400px;
+          min-width: 400px;
+        }
+
+        .video-item:hover paper-card {
+          @apply(--shadow-elevation-2dp);
+        }
+      }
+    </style>
+
+    <div class="container">
+      <div class="videos-header">
+        <h4 class="heading">[[localize('featured-videos-title')]]</h4>
+        <div class="controls">
+          <paper-icon-button icon="icons:chevron-left" on-tap="shiftContentLeft"></paper-icon-button>
+          <paper-icon-button icon="icons:chevron-right" on-tap="shiftContentRight"></paper-icon-button>
+        </div>
+      </div>
+      <div id="videos" class="videos">
+        <template is="dom-repeat" items="[[_videos]]" as="video">
+          <div class="video-item">
+            <paper-card class="card">
+              <div class="header paper-card">
+                <iron-image class="thumbnail" src="[[video.thumbnail]]" placeholder="[[video.preloadPlaceholder]]" sizing="cover" preload="" fade=""></iron-image>
+                <div class="play-video" on-tap="_playVideo">
+                  <iron-icon class="play-icon" icon="icons:play"></iron-icon>
+                </div>
+              </div>
+              <div class="paper-card-container">
+                <div class="card-content list">
+                  <div class="title">[[video.title]] [[video.preloadPlaceholder]]</div>
+                  <div class="speakers">[[video.speakers]]</div>
+                </div>
+              </div>
+            </paper-card>
+          </div>
+        </template>
+      </div>
+      <div layout="">
+        <a href$="[[app.data.videosSessionsUrl]]" class="block-link" target="_blank" rel="noopener noreferrer">
+          <paper-button>[[localize('featured-videos-view-all')]]</paper-button>
+        </a>
+      </div>
+    </div>
+
+  </template>
+
+  <script>!function(){"use strict";Polymer({is:"featured-videos",behaviors:[HOVERBOARD.LocalizeBehavior,HOVERBOARD.UtilsBehavior],listeners:{touchstart:"_onTouchStart",touchend:"_onTouchEnd"},properties:{_videos:{type:Array},_selectedVideo:{type:Object},_currentIndex:{type:Number,value:0}},observers:["_videosChanged(app.videos)"],_onTouchStart:function(t){var e=t.changedTouches[0];this.startX=e.pageX,this.startY=e.pageY,this.nodeWidth=t.currentTarget.offsetWidth},_onTouchEnd:function(t){this.threshold=this.nodeWidth/4,this.restraint=100;var e=t.changedTouches[0];this.distX=e.pageX-this.startX,this.distY=e.pageY-this.startY,Math.abs(this.distX)>=this.threshold&&Math.abs(this.distY)<=this.restraint&&(this.distX>0?this.shiftContentLeft():this.shiftContentRight())},_videosChanged:function(){this.app.videos&&(this._videos=this._randomOrder(this.app.videos).slice(0,6))},_playVideo:function(t){var e=t.model.video.speakers?" by "+t.model.video.speakers:"";HOVERBOARD.Elements.Template.openVideo(t.model.video.title+e,t.model.video.youtubeId,!0),HOVERBOARD.Analytics.trackEvent("video","watch","featured video "+t.model.video.title)},shiftContentLeft:function(){var t=Polymer.dom(this.root).querySelectorAll(".video-item"),e=t[t.length-1].getBoundingClientRect(),i=e.width,s=-(this._currentIndex-1)*i;this._currentIndex<t.length&&this._currentIndex>0&&(this.$.videos.style.transform="translate3d("+s+"px, 0, 0)",this._currentIndex--)},shiftContentRight:function(){var t=Polymer.dom(this.root).querySelectorAll(".video-item"),e=t[t.length-1].getBoundingClientRect(),i=e.width,s=-(this._currentIndex+1)*i;this._currentIndex>=0&&this._currentIndex<t.length-1&&(this.$.videos.style.transform="translate3d("+s+"px, 0, 0)",this._currentIndex++)}})}();</script>
+
+</dom-module>
+</body></html>

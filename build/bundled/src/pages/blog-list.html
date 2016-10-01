@@ -1,0 +1,93 @@
+<html><head><meta charset="UTF-8"><link rel="import" href="../hoverboard-app.html"></head><body><dom-module id="blog-list">
+
+  <template>
+
+    <style include="shared-styles">
+      :host {
+        display: block;
+        --grid-column-width: 396px;
+        --grid-gutter: 4px;
+        --grid-item-height: calc(3 * var(--grid-column-width) / 4);
+      }
+
+      .posts-container {
+        @apply(--layout-horizontal);
+        @apply(--layout-wrap);
+        margin: var(--grid-gutter) auto 40px;
+        max-width: calc(2 * var(--grid-column-width) + 4 * var(--grid-gutter));
+      }
+
+      .post {
+        @apply(--layout-vertical);
+        margin: var(--grid-gutter);
+        width: var(--grid-column-width);
+        height: var(--grid-item-height);
+        text-decoration: none;
+      }
+
+      .post:first-of-type {
+        width: calc(100% - 2 * var(--grid-gutter));
+        height: calc(var(--grid-column-width) + 2 * var(--grid-gutter));
+      }
+
+      .image {
+        height: 100%;
+        background: no-repeat 50% 50%;
+        opacity: 0.7;
+        transition: opacity 0.5s;
+      }
+
+      .title {
+        @apply(--layout-horizontal);
+        @apply(--layout-center-center);
+        padding: 12px;
+        min-height: 42px;
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+        letter-spacing: 0.8px;
+        line-height: 1.05;
+        color: #fff;
+      }
+
+      @media (max-width: 600px) {
+        .posts-container {
+          padding: 0 var(--grid-gutter);
+        }
+      }
+
+      @media (max-width: 960px) {
+        .posts-container {
+          max-width: none;
+        }
+
+        .post {
+          width: 100% !important;
+          height: var(--grid-item-height) !important;
+          margin: var(--grid-gutter) 0;
+        }
+      }
+
+      @media (min-width: 961px) {
+        .post:hover .image {
+          opacity: 1;
+        }
+      }
+    </style>
+
+    <div class="container posts-container">
+      <template is="dom-repeat" items="[[posts]]" as="post" on-dom-change="_updateCascadedNodes">
+        <a href$="/blog/posts/[[post.id]]/" class="post" style$="background-color: [[post.primaryColor]];" cascaded="">
+          <iron-image class="image" src="[[post.image]]" style$="background-color: [[post.primaryColor]];" sizing="cover" preload="" fade=""></iron-image>
+          <div class="title" style$="background-color: [[post.secondaryColor]];">[[post.title]]</div>
+        </a>
+      </template>
+    </div>
+    <footer-block app="{{app}}" cascaded=""></footer-block>
+
+  </template>
+
+  <script>!function(){"use strict";Polymer({is:"blog-list",behaviors:[Polymer.NeonAnimationRunnerBehavior,Polymer.NeonSharedElementAnimatableBehavior,HOVERBOARD.PageBehavior],properties:{posts:{type:Array},animationConfig:{type:Object,value:function(){return{entry:[{name:"fade-in-animation",animation:"fade-in-animation",node:this,timing:{delay:500}}],exit:[{name:"fade-out-animation",animation:"fade-out-animation",node:this}]}}}},_updateCascadedNodes:function(){var a=Polymer.dom(this.root).querySelectorAll("[cascaded]"),n=Array.prototype.slice.call(a);this.animationConfig.entry.push({name:"cascaded-animation",animation:"transform-animation",transformFrom:"translate3d(0, 100%, 0)",timing:{delay:500},nodes:n}),this.animationConfig.exit.push({name:"cascaded-animation",animation:"transform-animation",transformTo:"translate3d(0, 100%, 0)",nodes:n})}})}();</script>
+
+</dom-module>
+</body></html>

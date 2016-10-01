@@ -1,0 +1,290 @@
+<html><head><meta charset="UTF-8"><link rel="import" href="../hoverboard-app.html"></head><body><div hidden="" by-vulcanize=""><dom-module id="blog-list" assetpath="/">
+
+  <template>
+
+    <style include="shared-styles">
+      :host {
+        display: block;
+        --grid-column-width: 396px;
+        --grid-gutter: 4px;
+        --grid-item-height: calc(3 * var(--grid-column-width) / 4);
+      }
+
+      .posts-container {
+        @apply(--layout-horizontal);
+        @apply(--layout-wrap);
+        margin: var(--grid-gutter) auto 40px;
+        max-width: calc(2 * var(--grid-column-width) + 4 * var(--grid-gutter));
+      }
+
+      .post {
+        @apply(--layout-vertical);
+        margin: var(--grid-gutter);
+        width: var(--grid-column-width);
+        height: var(--grid-item-height);
+        text-decoration: none;
+      }
+
+      .post:first-of-type {
+        width: calc(100% - 2 * var(--grid-gutter));
+        height: calc(var(--grid-column-width) + 2 * var(--grid-gutter));
+      }
+
+      .image {
+        height: 100%;
+        background: no-repeat 50% 50%;
+        opacity: 0.7;
+        transition: opacity 0.5s;
+      }
+
+      .title {
+        @apply(--layout-horizontal);
+        @apply(--layout-center-center);
+        padding: 12px;
+        min-height: 42px;
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+        letter-spacing: 0.8px;
+        line-height: 1.05;
+        color: #fff;
+      }
+
+      @media (max-width: 600px) {
+        .posts-container {
+          padding: 0 var(--grid-gutter);
+        }
+      }
+
+      @media (max-width: 960px) {
+        .posts-container {
+          max-width: none;
+        }
+
+        .post {
+          width: 100% !important;
+          height: var(--grid-item-height) !important;
+          margin: var(--grid-gutter) 0;
+        }
+      }
+
+      @media (min-width: 961px) {
+        .post:hover .image {
+          opacity: 1;
+        }
+      }
+    </style>
+
+    <div class="container posts-container">
+      <template is="dom-repeat" items="[[posts]]" as="post" on-dom-change="_updateCascadedNodes">
+        <a href$="/blog/posts/[[post.id]]/" class="post" style$="background-color: [[post.primaryColor]];" cascaded="">
+          <iron-image class="image" src="[[post.image]]" style$="background-color: [[post.primaryColor]];" sizing="cover" preload="" fade=""></iron-image>
+          <div class="title" style$="background-color: [[post.secondaryColor]];">[[post.title]]</div>
+        </a>
+      </template>
+    </div>
+    <footer-block app="{{app}}" cascaded=""></footer-block>
+
+  </template>
+
+  <script>!function(){"use strict";Polymer({is:"blog-list",behaviors:[Polymer.NeonAnimationRunnerBehavior,Polymer.NeonSharedElementAnimatableBehavior,HOVERBOARD.PageBehavior],properties:{posts:{type:Array},animationConfig:{type:Object,value:function(){return{entry:[{name:"fade-in-animation",animation:"fade-in-animation",node:this,timing:{delay:500}}],exit:[{name:"fade-out-animation",animation:"fade-out-animation",node:this}]}}}},_updateCascadedNodes:function(){var a=Polymer.dom(this.root).querySelectorAll("[cascaded]"),n=Array.prototype.slice.call(a);this.animationConfig.entry.push({name:"cascaded-animation",animation:"transform-animation",transformFrom:"translate3d(0, 100%, 0)",timing:{delay:500},nodes:n}),this.animationConfig.exit.push({name:"cascaded-animation",animation:"transform-animation",transformTo:"translate3d(0, 100%, 0)",nodes:n})}})}();</script>
+
+</dom-module>
+<dom-module id="post-page" assetpath="/">
+
+  <template>
+
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        --grid-gutter: 4px;
+        --grid-item-height: 300px;
+      }
+
+      .post-wrapper > .container {
+        padding-top: 20px;
+        max-width: 896px;
+      }
+
+      .post-wrapper > .container:not(.latest-post-wrapper) {
+        padding-bottom: 20px;
+      }
+
+      .spinner-wrapper {
+        @apply(--layout-vertical);
+        @apply(--layout-center-center);
+        @apply(--layout-fit);
+        min-height: 50vh;
+        max-height: 50vh;
+        pointer-events: none;
+      }
+
+      .post-wrapper {
+        background: #fff;
+      }
+
+      .latest-post-wrapper {
+        @apply(--layout-vertical);
+        padding-right: var(--grid-gutter);
+        padding-left: var(--grid-gutter);
+      }
+
+      .latest-post {
+        @apply(--layout-flex);
+      }
+
+      .latest-post:nth-of-type(2) {
+        margin-top: 10px;
+      }
+
+      .latest-post-label {
+        margin: 0 var(--grid-gutter);
+        font-size: 14px;
+        color: var(--secondary-text-color);
+      }
+
+      .post {
+        @apply(--layout-vertical);
+        height: var(--grid-item-height);
+        margin: var(--grid-gutter) 0;
+        text-decoration: none;
+      }
+
+      .image {
+        height: 100%;
+        background: no-repeat 50% 50%;
+      }
+
+      .title {
+        @apply(--layout-horizontal);
+        @apply(--layout-center-center);
+        padding: 12px;
+        min-height: 42px;
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: .8px;
+        line-height: 1.05;
+        color: #fff;
+      }
+
+      .share-label {
+        margin-top: 72px;
+        display: block;
+        color: var(--secondary-text-color);
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 14px;
+      }
+
+      button[is=paper-icon-button-light] {
+        margin: 16px;
+        padding: 8px;
+        width: 40px;
+        height: 40px;
+      }
+
+      @media (min-width: 601px) {
+        .latest-post-wrapper {
+          @apply(--layout-horizontal);
+        }
+
+        .latest-post:nth-of-type(2) {
+          margin-top: 0;
+          text-align: right;
+        }
+
+        .post {
+          margin: var(--grid-gutter);
+        }
+      }
+    </style>
+
+    <div id="animationWrapper">
+      <div class="post-wrapper">
+        <div class="container" cascaded="">
+          <marked-element class="post-content" markdown="[[postBody]]">
+            <div class="markdown-html"></div>
+          </marked-element>
+
+          <span class="share-label">[[localize('share-with')]]</span>
+          <div layout="" horizontal="" center-center="" wrap="">
+            <button is="paper-icon-button-light" class="share-button" on-tap="share" share="gplus">
+              <iron-icon icon="gplus"></iron-icon>
+            </button>
+            <button is="paper-icon-button-light" class="share-button" on-tap="share" share="facebook">
+              <iron-icon icon="facebook"></iron-icon>
+            </button>
+            <button is="paper-icon-button-light" class="share-button" on-tap="share" share="twitter">
+              <iron-icon icon="twitter"></iron-icon>
+            </button>
+            <button is="paper-icon-button-light" class="share-button" on-tap="share" share="copy">
+              <iron-icon icon="link"></iron-icon>
+            </button>
+          </div>
+        </div>
+
+        <div class="container latest-post-wrapper">
+          <div class="latest-post">
+            <template is="dom-if" if="{{_latestPosts.0}}">
+              <span class="latest-post-label">Next post</span>
+              <a href$="/blog/posts/[[_latestPosts.0.id]]/" class="post" cascaded="">
+                <iron-image class="image" src="[[_latestPosts.0.image]]" style$="background-color: [[_latestPosts.0.primaryColor]];" sizing="cover" preload="" fade=""></iron-image>
+                <div class="title" style$="background-color: [[_latestPosts.0.secondaryColor]];">
+                  [[_latestPosts.0.title]]
+                </div>
+              </a>
+            </template>
+          </div>
+          <div class="latest-post">
+            <template is="dom-if" if="[[_latestPosts.1]]">
+              <span class="latest-post-label">Previous post</span>
+              <a href$="/blog/posts/[[_latestPosts.1.id]]/" class="post" cascaded="">
+                <iron-image class="image" src="[[_latestPosts.1.image]]" style$="background-color: [[_latestPosts.1.primaryColor]];" sizing="cover" preload="" fade=""></iron-image>
+                <div class="title" style$="background-color: [[_latestPosts.1.secondaryColor]];">
+                  [[_latestPosts.1.title}}
+                </div>
+              </a>
+            </template>
+          </div>
+        </div>
+      </div>
+
+
+      <footer-block app="{{app}}" cascaded=""></footer-block>
+    </div>
+
+    <div class="spinner-wrapper">
+      <paper-spinner id="spinner" active=""></paper-spinner>
+    </div>
+
+    <iron-ajax id="ajax" url="[[_postUrl]]" handle-as="text" last-response="{{postBody}}" on-response="_postLoaded"></iron-ajax>
+
+  </template>
+
+  <script>!function(){"use strict";Polymer({is:"post-page",behaviors:[Polymer.NeonAnimationRunnerBehavior,Polymer.NeonSharedElementAnimatableBehavior,HOVERBOARD.LocalizeBehavior,HOVERBOARD.PageBehavior,HOVERBOARD.UtilsBehavior,HOVERBOARD.ShareBehavior],properties:{postId:{type:String,notify:!0},posts:{type:Array},_loaded:{type:Boolean,value:!1},_post:{type:Object},_latestPosts:{type:Array,value:[]},animationConfig:{type:Object,value:function(){var t=Polymer.dom(this.root).querySelectorAll("[cascaded]"),i=Array.prototype.slice.call(t);return{entry:[{name:"fade-in-animation",animation:"fade-in-animation",node:this,timing:{delay:500}}],exit:[{name:"cascaded-animation",animation:"transform-animation",transformTo:"translate3d(0, 100%, 0)",nodes:i},{name:"fade-out-animation",animation:"fade-out-animation",node:this}],postLoaded:[{name:"cascaded-animation",animation:"transform-animation",transformFrom:"translate3d(0, 100%, 0)",nodes:i,timing:{delay:500}},{name:"fade-in-animation",animation:"fade-in-animation",nodes:i,timing:{delay:500}},{name:"scale-down-animation",animation:"scale-down-animation",node:this.$.spinner}]}}}},observers:["_postChanged(posts, postId)"],listeners:{"neon-animation-finish":"_onNeonAnimationFinish"},_postChanged:function(){if(this.postId){this.$.animationWrapper.style.opacity=0,this.$.animationWrapper.style.display="none",this.$.spinner.style.opacity=1;var t=this._getIndexByProperty(this.posts,"id",this.postId);this._latestPosts[0]=t>0?this.posts[t-1]:null,this._latestPosts[1]=t<this.posts.length-1?this.posts[t+1]:null,this.notifyPath("_latestPosts",this._latestPosts.slice()),this._post=this.posts[t],this._updateHeaderSettings(),this.notifyPath("_post.date",new Date(this._post.posted).toDateString().slice(4)),this._postUrl="/data/posts/"+this._post.posted+"-"+this.postId+".markdown",this.$.ajax.generateRequest()}},_postLoaded:function(){this._loaded=!0,this.async(function(){this.$.animationWrapper.style.opacity=1,this.$.animationWrapper.style.display="block"},100),this.playAnimation("postLoaded"),this.postId=null,HOVERBOARD.Analytics.trackEvent("blog","open post",this._post.title)},_updateHeaderSettings:function(){this._post&&this.set("app.headerSettings",{backgroundColor:this._post.primaryColor,backgroundImage:this._post.image,fontColor:"#fff",tabBarColor:"#fff",title:this._post.title,subtitle:new Date(this._post.posted).toDateString().slice(4)})},_onNeonAnimationFinish:function(){this._loaded&&(this.$.spinner.style.opacity=0)}})}();</script>
+
+</dom-module>
+</div><dom-module id="blog-page">
+
+  <template>
+
+    <app-route route="{{route}}" pattern="/:page" data="{{pageData}}" tail="{{subRoute}}"></app-route>
+
+    <app-route route="{{subRoute}}" pattern="/:id" data="{{postData}}"></app-route>
+
+
+    <neon-animated-pages id="pages" selected="{{pageData.page}}" attr-for-selected="name" selected-attribute="selected">
+
+      <blog-list id="blogList" name="" app="{{app}}" posts="[[posts]]"></blog-list>
+
+      <post-page name="posts" app="{{app}}" posts="[[posts]]" post-id="[[postData.id]]"></post-page>
+
+    </neon-animated-pages>
+
+  </template>
+
+  <script>!function(){"use strict";Polymer({is:"blog-page",behaviors:[Polymer.NeonAnimatableBehavior,HOVERBOARD.PageBehavior],properties:{route:{type:Object},posts:{type:Array},animationConfig:{type:Object,value:function(){return{entry:[{name:"fade-in-animation",animation:"fade-in-animation",node:this,timing:{delay:500}}],exit:[{name:"fade-out-animation",animation:"fade-out-animation",node:this}]}}}}})}();</script>
+
+</dom-module>
+</body></html>

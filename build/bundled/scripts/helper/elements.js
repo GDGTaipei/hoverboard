@@ -1,0 +1,1 @@
+HOVERBOARD.Elements=function(){"use strict";function e(){HOVERBOARD.Elements.Template=document.getElementById("happ")}return{init:e}}();
