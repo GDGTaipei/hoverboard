@@ -82,7 +82,7 @@
       document.head.appendChild(script);
     }
 
-    if (!(HOVERBOARD.Util.getChromeVersion() &&
+    /*if (!(HOVERBOARD.Util.getChromeVersion() &&
       HOVERBOARD.Util.getChromeVersion() >= 46 || HOVERBOARD.Util.getFirefoxVersion() && HOVERBOARD.Util.getFirefoxVersion() >= 40)) {
       var parent = document.querySelector('body');
       var swScript = document.querySelector('#sw-registration');
@@ -92,7 +92,7 @@
 
       ga('send', 'event', 'browser', 'unsupported-es6-intl', navigator.userAgent);
       console.log('Your browser is out-of-date. Please download one of these up-to-date, free and excellent browsers: Chrome, Chromium, Opera, Vivaldi');
-    }
+    }*/
   }
 
   window.addEventListener('offline', function () {
