@@ -84,60 +84,25 @@
     }, {
       "order" : 1,
       "logoUrl" : "../images/logos/gdg-x.svg",
-      "name" : "GDG[x]",
+      "name" : "GDG Taipei",
       "url" : "https://github.com/gdg-x"
     }, {
       "order" : 2,
       "logoUrl" : "../images/logos/google.svg",
-      "name" : "Google",
+      "name" : "AppWorks",
       "url" : "https://www.google.com.ua/intl/en/about/"
     }, {
       "order" : 3,
       "logoUrl" : "../images/logos/gdg-x.svg",
-      "name" : "GDG[x]",
+      "name" : "AppWorks School",
       "url" : "https://github.com/gdg-x"
-    }, {
-      "order" : 4,
-      "logoUrl" : "../images/logos/google.svg",
-      "name" : "Google",
-      "url" : "https://www.google.com.ua/intl/en/about/"
-    }, {
-      "order" : 5,
-      "logoUrl" : "../images/logos/gdg-x.svg",
-      "name" : "GDG[x]",
-      "url" : "https://github.com/gdg-x"
-    }, {
-      "order" : 6,
-      "logoUrl" : "../images/logos/google.svg",
-      "name" : "Google",
-      "url" : "https://www.google.com.ua/intl/en/about/"
-    }, {
-      "order" : 7,
-      "logoUrl" : "../images/logos/gdg-x.svg",
-      "name" : "GDG[x]",
-      "url" : "https://github.com/gdg-x"
-    }, {
-      "order" : 8,
-      "logoUrl" : "../images/logos/google.svg",
-      "name" : "Google",
-      "url" : "https://www.google.com.ua/intl/en/about/"
-    }, {
-      "order" : 9,
-      "logoUrl" : "../images/logos/gdg-x.svg",
-      "name" : "GDG[x]",
-      "url" : "https://github.com/gdg-x"
-    }, {
-      "order" : 10,
-      "logoUrl" : "../images/logos/google.svg",
-      "name" : "Google",
-      "url" : "https://www.google.com.ua/intl/en/about/"
-    } ],
+    }],
     "order" : 1,
     "title" : "General Partner"
   } ],
   "schedule" : {
-    "2016-09-09" : {
-      "dateReadable" : "September 9",
+    "2019-04-27" : {
+      "dateReadable" : "April 27",
       "timeslots" : [ {
         "endTime" : "10:00",
         "sessions" : [ {
@@ -239,102 +204,6 @@
           "items" : [ 137 ]
         } ],
         "startTime" : "18:30"
-      } ],
-      "tracks" : [ {
-        "title" : "Expo hall"
-      }, {
-        "title" : "Conference hall"
-      }, {
-        "title" : "Workshops hall"
-      } ]
-    },
-    "2016-09-10" : {
-      "dateReadable" : "September 10",
-      "timeslots" : [ {
-        "endTime" : "10:10",
-        "sessions" : [ {
-          "items" : [ 135 ]
-        } ],
-        "startTime" : "09:30"
-      }, {
-        "endTime" : "10:50",
-        "sessions" : [ {
-          "items" : [ 114 ]
-        }, {
-          "items" : [ 117 ]
-        }, {
-          "items" : [ 121 ]
-        } ],
-        "startTime" : "10:10"
-      }, {
-        "endTime" : "11:40",
-        "sessions" : [ {
-          "items" : [ 122 ]
-        }, {
-          "items" : [ 113 ]
-        }, {
-          "extend" : 2,
-          "items" : [ 121 ]
-        } ],
-        "startTime" : "11:00"
-      }, {
-        "endTime" : "12:30",
-        "sessions" : [ {
-          "items" : [ 104 ]
-        }, {
-          "items" : [ 124 ]
-        } ],
-        "startTime" : "11:50"
-      }, {
-        "endTime" : "14:00",
-        "sessions" : [ {
-          "items" : [ 133 ]
-        } ],
-        "startTime" : "12:30"
-      }, {
-        "endTime" : "14:40",
-        "sessions" : [ {
-          "items" : [ 108 ]
-        }, {
-          "items" : [ 128 ]
-        }, {
-          "extend" : 2,
-          "items" : [ 102 ]
-        } ],
-        "startTime" : "14:00"
-      }, {
-        "endTime" : "15:30",
-        "sessions" : [ {
-          "items" : [ 110 ]
-        }, {
-          "items" : [ 123 ]
-        } ],
-        "startTime" : "14:50"
-      }, {
-        "endTime" : "16:00",
-        "sessions" : [ {
-          "items" : [ 134 ]
-        } ],
-        "startTime" : "15:30"
-      }, {
-        "endTime" : "16:40",
-        "sessions" : [ {
-          "items" : [ 131 ]
-        }, {
-          "items" : [ 140 ]
-        }, {
-          "extend" : 2,
-          "items" : [ 130 ]
-        } ],
-        "startTime" : "16:00"
-      }, {
-        "endTime" : "17:30",
-        "sessions" : [ {
-          "items" : [ 115 ]
-        }, {
-          "items" : [ 140 ]
-        } ],
-        "startTime" : "16:50"
       } ],
       "tracks" : [ {
         "title" : "Expo hall"
@@ -1070,7 +939,6 @@
       "country" : "Prague, Czech Republic",
       "featured" : true,
       "name" : "Jozef Vodicka",
-      "order" : 4,
       "photo" : "/images/people/jozef_vodicka.jpg",
       "photoUrl" : "https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/people/optim/jozef_vodicka.jpg",
       "shortBio" : "TEDx speaker, Slovak Forbes 30-under-30, IT auditor for AIESEC International & TOP 5 Student Entrepreneurs in Slovakia.",
@@ -1633,10 +1501,10 @@
       "order" : 7,
       "title" : "Social and media"
     } ],
-    "title" : "Core Team"
+    "title" : "核心團隊"
   }, {
     "members" : [ {
-      "name" : "Ihor Dvoretskyi",
+      "name" : "Mia Yu",
       "photo" : "/images/people/ihor_dvoretskyi.jpg",
       "photoUrl" : "",
       "socials" : [ {
@@ -1649,9 +1517,9 @@
         "name" : "Twitter"
       } ],
       "order" : 0,
-      "title" : "Cloud stream"
+      "title" : "WTM Taipei Ambassador"
     }, {
-      "name" : "Dmytro Danylyk",
+      "name" : "Cristine Chen",
       "photo" : "/images/people/dmytro_danylyk.jpg",
       "photoUrl" : "",
       "socials" : [ {
@@ -1668,66 +1536,21 @@
         "name" : "Website"
       } ],
       "order" : 1,
-      "title" : "Android Stream"
+      "title" : "WTM Taipei Ambassador"
     } ],
     "title" : "Program Committee"
   } ],
   "tickets" : [ {
     "available" : true,
     "currency" : "$",
-    "ends" : "Oct 13",
-    "info" : "Requires valid student/lecturer ID",
-    "name" : "EDU",
-    "price" : 80,
-    "soldOut" : false,
-    "starts" : "Feb 7",
-    "url" : "https://2event.com/events/1027108"
-  }, {
-    "available" : false,
-    "currency" : "$",
-    "ends" : "Mar 31",
-    "inDemand" : false,
-    "info" : "Or first 50 tickets",
-    "name" : "Pre Early Bird",
-    "price" : 100,
-    "regular" : true,
+    "ends" : "April 26",
+    "info" : "It's a awesome event with 0 price",
+    "name" : "Free",
+    "price" : 0,
     "soldOut" : true,
-    "starts" : "Feb 7",
-    "url" : "https://2event.com/events/1027108"
-  }, {
-    "available" : true,
-    "currency" : "$",
-    "ends" : "Jun 30",
-    "inDemand" : true,
-    "info" : "Or first 200 tickets",
-    "name" : "Early Bird",
-    "price" : 120,
-    "regular" : true,
-    "soldOut" : false,
-    "starts" : "Feb 7",
-    "url" : "https://2event.com/events/1027108"
-  }, {
-    "available" : false,
-    "currency" : "$",
-    "ends" : "Sep 30",
-    "inDemand" : false,
-    "info" : "Or first 350 tickets",
-    "name" : "Regular",
-    "price" : 160,
-    "primary" : true,
-    "regular" : true,
-    "soldOut" : false,
-    "starts" : "Jul 1",
-    "url" : "https://2event.com/events/1027108"
-  }, {
-    "available" : true,
-    "currency" : "$",
-    "info" : "Money worth nothing when you love it",
-    "name" : "I Love DFUA",
-    "price" : 280,
-    "soldOut" : false,
-    "url" : "https://2event.com/events/1027108"
-  } ],
+    "starts" : "March 18",
+    "url" : "https://www.meetup.com/GDGTaipei/events/259496581/"
+  }],
   "triggers" : {
     "images" : false
   },

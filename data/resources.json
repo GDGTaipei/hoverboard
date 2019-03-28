@@ -41,7 +41,7 @@
           "newTab": true
         },
         {
-          "name": "Google Developers Group",
+          "name": "Google Developers Group Taipei",
           "url": "https://developers.google.com/",
           "newTab": true
         },
@@ -115,11 +115,11 @@
       },
       "sessions": {
         "label": "議程",
-        "number": "99"
+        "number": "6"
       },
       "tracks": {
         "label": "軌",
-        "number": "4"
+        "number": "3"
       }
     }
   },
@@ -191,7 +191,7 @@
   },
   "subscribeBlock": {
     "callToAction": {
-      "description": "獲得活動的更新訊息",
+      "description": "獲得活動的最新訊息",
       "label": "登記"
     },
     "yourEmail": "你的電子信箱",
@@ -210,29 +210,29 @@
     "description": "Google is known all around the world. Everyone is 'googling', checking on 'maps' and communicating in 'gmail'. For simple users, they are services that just works, but not for us. Developers see much more: APIs, scalability issues, complex technology stacks. And that is what GDG is about.<br><br> [Google Developers Group (GDG) Lviv](http://lviv.gdg.org.ua/) - is open and volunteer geek community who create exciting projects and share experience about Google technologies with a passion.<br><br> Our goal is to organize space to connect the best industry experts with Ukrainian audience to boost development of IT."
   },
   "schedule": {
-    "saveSessionsSignedOut": "Sign in to save sessions"
+    "saveSessionsSignedOut": "登入的話可以把議程存下來喔"
   },
   "sessionDetails": {
-    "contentLevel": "Content level",
-    "viewPresentation": "View presentation",
-    "viewVideo": "View video",
-    "speakers": "Speakers"
+    "contentLevel": "內容程度",
+    "viewPresentation": "看投影片",
+    "viewVideo": "看影片",
+    "speakers": "講者們"
   },
   "speakerDetails": {
-    "sessions": "Sessions"
+    "sessions": "議程"
   },
   "notifications": {
-    "default": "Enable notifications",
-    "enabled": "We will miss you but you can unsubscribe anytime",
-    "blocked": "We can't send you notifications right now. Please enable notifications in your browser",
-    "subscribe": "Subscribe",
-    "unsubscribe": "Unsubscribe",
+    "default": "啟用通知",
+    "enabled": "我們會想你喔，但你可以隨時解除通知",
+    "blocked": "我們現在沒辦法送通知給你喔，請打開你的瀏覽器的通知設定",
+    "subscribe": "註冊",
+    "unsubscribe": "取消",
     "enable": {
-      "label": "Enable",
+      "label": "啟用",
       "link": "https://pushassist.com/knowledgebase/how-to-enable-or-disable-push-notifications-on-chrome-firefox-safari-b/"
     },
     "toast": {
-      "title": "Open"
+      "title": "打開"
     }
   },
   "aboutOrganizerBlock": {
@@ -242,15 +242,15 @@
         "title": "Organizer",
         "description": "<a href='http://lviv.gdg.org.ua' target='_blank'>GDG Lviv</a> with support of 10 GDGs from all around Ukraine is proud organizer of DevFest Ukraine",
         "callToAction": {
-          "label": "Open team page",
+          "label": "打開團隊頁面",
           "link": "/team"
         }
       },
       {
-        "title": "What is GDG?",
+        "title": "GDG 是什麼?",
         "description": "Google Developers Group (GDG) - is open and volunteer geek community who create exciting projects and share experience about Google technologies with a passion",
         "callToAction": {
-          "label": "Read more",
+          "label": "讀更多",
           "link": "https://developers.google.com/groups/",
           "newTab": true
         }
@@ -258,21 +258,21 @@
     ]
   },
   "signInDialog": {
-    "alreadyHaveAccount": "You already have an account",
-    "alreadyUsed": "You've already used",
+    "alreadyHaveAccount": "你已經有帳號啦",
+    "alreadyUsed": "你已經在使用了",
     "signInToContinue": {
-      "part1": "Sign in with",
-      "part2": "to continue."
+      "part1": "請登入",
+      "part2": "後繼續"
     }
   },
   "filters": {
-    "title": "Filters",
-    "results": "Results",
+    "title": "篩選條件",
+    "results": "結果",
     "tags": "Tags",
-    "complexity": "Complexity",
-    "clear": "Clear all"
+    "complexity": "複雜",
+    "clear": "全部清除"
   },
   "addToHomeScreen": {
-    "cta": "Add to Home Screen"
+    "cta": "加到桌面"
   }
 }
