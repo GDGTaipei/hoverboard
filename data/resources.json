@@ -239,16 +239,16 @@
     "image": "/images/team.jpg",
     "blocks": [
       {
-        "title": "Organizer",
-        "description": "<a href='http://lviv.gdg.org.ua' target='_blank'>GDG Lviv</a> with support of 10 GDGs from all around Ukraine is proud organizer of DevFest Ukraine",
+        "title": "主辦",
+        "description": "<a href='https://www.facebook.com/groups/WTMTaipei' target='_blank'>WTM Taipei</a>Women Techmaker ( 簡稱 WTM ) 是 Google 為處於科技產業的女性提供能見度，社群以及資源的一項計畫。藉由 Google Developer Group ( 簡稱 GDG ) 分享資訊，舉辦女性有興趣的科技活動，希望有更多女性加入科技產業。若男性對活動有興趣，也歡迎來參加。",
         "callToAction": {
           "label": "打開團隊頁面",
           "link": "/team"
         }
       },
       {
-        "title": "GDG 是什麼?",
-        "description": "Google Developers Group (GDG) - is open and volunteer geek community who create exciting projects and share experience about Google technologies with a passion",
+        "title": "Google Developers Group (GDG) 是什麼?",
+        "description": "Google 開發者社群 (GDG) - 是開放並由志工所組成的技術社群，我們創造令人感興趣的專案，並以熱情分享使用 Google 技術的相關經驗！",
         "callToAction": {
           "label": "讀更多",
           "link": "https://developers.google.com/groups/",
