@@ -12,7 +12,7 @@
     "dfua-summary" : {
       "backgroundColor" : "#ffc107",
       "brief" : "在這次的活動裡，你可以學到...",
-      "content" : " [****IWD'19 Taipei****](https://www.meetup.com/GDGTaipei/events/259496581/) - 在這次的活動裡，你可以學到：\n1. 講者的職涯故事\n2. 藉由有趣的工作營提升你的自信\n3. Action on Google Workshop\n4. 認識同樣也熱愛科技的朋友\n 這次的工作營是免費的，名額有限，以登記順序為主，請有興趣的朋友儘早報名！<plastic-image srcset=\"/images/posts/iwd_19_taipei_c4p.jpg\" lazy-load preload fade></plastic-image>\n<div layout horizontal center-justified> <a href=\"https://www.meetup.com/GDGTaipei/events/259496581/\" rel=\"noopener noreferrer\">   <paper-button primary>➡ 報名</paper-button> </a> </div>",
+      "content" : " [****IWD'19 Taipei****](https://www.meetup.com/GDGTaipei/events/259496581/) - 在這次的活動裡，你可以學到：\n1. 講者的職涯故事\n2. 藉由有趣的工作營提升你的自信\n3. Action on Google Workshop\n4. 認識同樣也熱愛科技的朋友\n \n這次的工作營是免費的，名額有限，以登記順序為主，請有興趣的朋友儘早報名！<plastic-image srcset=\"/images/posts/iwd_19_taipei_c4p.jpg\" lazy-load preload fade></plastic-image>\n<div layout horizontal center-justified> <a href=\"https://www.meetup.com/GDGTaipei/events/259496581/\" rel=\"noopener noreferrer\">   <paper-button primary>➡ 報名</paper-button> </a> </div>",
       "image" : "/images/posts/summary16_1.jpg",
       "published" : "2019-03-19",
       "source" : "/data/posts/2016-09-10-dfua-summary.md",
