@@ -1866,7 +1866,7 @@
         },
         {
           "name": "Vanessa Lu",
-          "photoUrl": "https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/people/optim/vasylyna_mytsak.jpg",
+          "photoUrl": "",
           "socials": [
             {
               "icon": "facebook",
@@ -1997,6 +1997,82 @@
         }
       ],
       "title": "助教組"
+    },{
+      "members": [
+        {
+          "name": "黃啟賢(Anderson)",
+          "photoUrl": "",
+          "socials": [
+            {
+              "icon": "facebook",
+              "link": "https://www.facebook.com/anderson.huang.7",
+              "name": "Facebook"
+            }
+          ],
+          "order": 0,
+          "title": "攝影組 / Photographer"
+        }
+      ],
+      "title": "攝影組"
+    },{
+      "members": [
+        {
+          "name": "SUSU",
+          "photoUrl": "",
+          "order": 0,
+          "title": "機動組組員"
+        },{
+          "name": "SUSU",
+          "photoUrl": "",
+          "socials": [
+            {
+              "icon": "facebook",
+              "link": "https://www.facebook.com/anderson.huang.7",
+              "name": "Facebook"
+            }
+          ],
+          "order": 1,
+          "title": "機動組組員"
+        },{
+          "name": "Kris",
+          "photoUrl": "",
+          "order": 2,
+          "title": "機動組組員"
+        },{
+          "name": "Alison",
+          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2FAlisonmeng.JPG?alt=media&token=f2436b29-d28d-48b0-a02a-4148c82c1b93",
+          "socials": [
+            {
+              "icon": "facebook",
+              "link": "https://www.facebook.com/fanchimeng",
+              "name": "Facebook"
+            },{
+              "icon": "linkedin",
+              "link": "http://linkedin.com/in/fan-chi-alison-meng-598aa7b7",
+              "name": "Linkedin"
+            }
+          ],
+          "order": 3,
+          "title": "機動組組員"
+        },{
+          "name": "Ivan",
+          "order": 4,
+          "title": "機動組組員"
+        },{
+          "name": "蘇怡嘉",
+          "socials": [
+            {
+              "icon": "facebook",
+              "link": "https://www.facebook.com/sudosu.tw",
+              "name": "Facebook"
+            }
+          ],
+          "order": 5,
+          "title": "機動組組員"
+
+        }
+      ],
+      "title": "機動組"
     }
   ],
   "tickets": [
