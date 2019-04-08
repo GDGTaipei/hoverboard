@@ -1735,7 +1735,7 @@
     {
       "members": [
         {
-          "name": "Miao Yu",
+          "name": "Mia Yu",
           "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2Fmia.yu.jpg?alt=media&token=571abd75-cef6-4e3e-91a2-d6b8ebabc1fe",
           "socials": [
             {
@@ -1760,36 +1760,63 @@
             },
             {
               "icon": "website",
-              "link": "http://andrusiv.com/",
+              "link": "https://medium.com/@mia.shopgal",
               "name": "Blog"
             }
           ],
           "order": 0,
-          "title": "網站組, WTM Taipei Ambassador"
+          "title": "網站組, WTM Taipei Ambassador, Keyboard Wizard, 寫扣的娘"
         },
         {
           "name": "Christine Chen",
-          "photo": "/images/people/vitaliy_zasadnyy.jpg",
-          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fpeople%2Fsofiya_huts.jpg?alt=media&token=a911eafb-f709-4af7-b1cb-58a6604b70d1",
+          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2FCristine.jpg?alt=media&token=6d28e3d3-9969-4b47-8498-febcc5e2ff6f",
           "socials": [
             {
               "icon": "facebook",
               "link": "https://www.facebook.com/cristinechenshinpei",
               "name": "Facebook"
+            },
+            {
+              "icon": "twitter",
+              "link": "https://twitter.com/CristineChen",
+              "name": "Twitter"
+            },
+            {
+              "icon": "linkedin",
+              "link": "https://linkedin.com/in/cristinechen/",
+              "name": "Linkedin"
+            },
+            {
+              "icon": "website",
+              "link": "https://medium.com/@cristinechen",
+              "name": "Blog"
             }
           ],
           "order": 1,
-          "title": "宣傳, WTM Taipei Ambassador"
+          "title": "網路行銷組, WTM Taipei Ambassador"
         },
         {
           "name": "Eva Chu",
-          "photo": "/images/people/vitaliy_zasadnyy.jpg",
-          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fpeople%2Fvitaliy_zasadnyy.jpg?alt=media&token=930e05c8-ae43-4628-8d4c-3e8f5193cda3",
+          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2FEvAChU.JPG?alt=media&token=c2889002-499c-4377-a429-0c747ad68172",
           "socials": [
             {
               "icon": "facebook",
               "link": "https://www.facebook.com/xalien.chu",
               "name": "Facebook"
+            },
+            {
+              "icon": "twitter",
+              "link": "https://twitter.com/xalien_chu",
+              "name": "Twitter"
+            },
+            {
+              "icon": "linkedin",
+              "link": "https://www.linkedin.com/in/annlin79/",
+              "name": "Linkedin"
+            },{
+              "icon": "website",
+              "link": "https://medium.com/@oux",
+              "name": "Blog"
             }
           ],
           "order": 2,
@@ -1797,13 +1824,16 @@
         },
         {
           "name": "Ann Lin",
-          "photo": "/images/people/marta_maxymiak.jpg",
-          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fpeople%2Fmarta_maxymiak.jpg?alt=media&token=6532f039-7f86-4304-8558-dbfbb3ae8d68",
+          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2FAnn.jpg?alt=media&token=5526c78c-cd51-4786-af64-3be8c72ea189",
           "socials": [
             {
               "icon": "facebook",
               "link": "https://www.facebook.com/weirui.lin",
               "name": "Facebook"
+            },{
+              "icon": "linkedin",
+              "link": "https://www.linkedin.com/in/annlin79/",
+              "name": "Linkedin"
             }
           ],
           "order": 3,
@@ -1811,27 +1841,41 @@
         },
         {
           "name": "Annie",
-          "photo": "/images/people/ostap_andrusiv.jpg",
-          "photoUrl": "https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/people/optim/ostap_andrusiv.jpg",
+          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2FAnnie.jpg?alt=media&token=6a643e14-13f7-416e-9f01-e0eb0e5ca4e8",
           "socials": [
             {
               "icon": "facebook",
               "link": "https://www.facebook.com/badu.huang",
               "name": "Facebook"
+            },{
+              "icon": "twitter",
+              "link": "https://twitter.com/Badu_Huang",
+              "name": "Twitter"
+            },{
+              "icon": "linkedin",
+              "link": "https://www.linkedin.com/in/che-fen-huang/",
+              "name": "Linkedin"
+            },{
+              "icon": "website",
+              "link": "https://medium.com/@baduhuang",
+              "name": "Blog"
             }
           ],
           "order": 4,
-          "title": "WTM Taipei Ambassador"
+          "title": "議程組, WTM Taipei Ambassador"
         },
         {
           "name": "Vanessa Lu",
-          "photo": "/images/people/vasylyna_mytsak.jpg",
           "photoUrl": "https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/people/optim/vasylyna_mytsak.jpg",
           "socials": [
             {
               "icon": "facebook",
               "link": "https://www.facebook.com/rup3jp6",
               "name": "Facebook"
+            },{
+              "icon": "linkedin",
+              "link": "https://www.linkedin.com/in/luvanessa/",
+              "name": "Linkedin"
             }
           ],
           "order": 5,
@@ -1839,13 +1883,16 @@
         },
         {
           "name": "陳小水",
-          "photo": "/images/people/volodya_karpliuk.jpg",
-          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fpeople%2Fvolodya_karpliuk.jpg?alt=media&token=aa08d9c9-c42a-435f-8672-c3a004e3aa08",
+          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2FWater_Chen.jpg?alt=media&token=6c691c3a-b721-4444-aff6-7f7f0995aec8",
           "socials": [
             {
               "icon": "facebook",
               "link": "https://www.facebook.com/einestein.wasser",
               "name": "Facebook"
+            },{
+              "icon": "linkedin",
+              "link": "https://www.linkedin.com/in/shaopingchen/",
+              "name": "Linkedin"
             }
           ],
           "order": 6,
@@ -1853,12 +1900,11 @@
         },
         {
           "name": "Lu Lu",
-          "photo": "/images/people/diana_pinchuk.jpg",
           "photoUrl": "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fpeople%2Fdiana_pinchuk.jpg?alt=media&token=189d67d1-004f-4a3c-9e0c-13bc992bbaf7",
           "socials": [
             {
               "icon": "facebook",
-              "link": "https://www.facebook.com/diana.pinchuk.9",
+              "link": "https://www.facebook.com/lulu.Nai",
               "name": "Facebook"
             }
           ],
@@ -1867,22 +1913,13 @@
         },
         {
           "name": "Blake",
-          "photo": "/images/people/diana_pinchuk.jpg",
-          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fpeople%2Fdiana_pinchuk.jpg?alt=media&token=189d67d1-004f-4a3c-9e0c-13bc992bbaf7",
-          "socials": [
-            {
-              "icon": "facebook",
-              "link": "https://www.facebook.com/profile.php?id=100000034791041",
-              "name": "Facebook"
-            }
-          ],
+          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2FBlake.jpg?alt=media&token=9c027689-fd7f-424b-be46-3971462c8971",
           "order": 8,
           "title": "攝影組"
         },
         {
           "name": "Kevin",
-          "photo": "/images/people/diana_pinchuk.jpg",
-          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fpeople%2Fdiana_pinchuk.jpg?alt=media&token=189d67d1-004f-4a3c-9e0c-13bc992bbaf7",
+          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2Fkevin_chiu.jpg?alt=media&token=f1f57742-da8f-4646-a190-5e87884d4bf0",
           "socials": [
             {
               "icon": "facebook",
@@ -1899,50 +1936,67 @@
     {
       "members": [
         {
-          "name": "Mia Yu",
-          "photo": "/images/people/ihor_dvoretskyi.jpg",
+          "name": "小山羌 / Amy",
           "photoUrl": "",
           "socials": [
             {
               "icon": "facebook",
-              "link": "https://www.facebook.com/idvoretskyi",
+              "link": "https://fb.com/linamy85",
               "name": "Facebook"
-            },
-            {
-              "icon": "twitter",
-              "link": "https://twitter.com/idvoretskyi",
-              "name": "Twitter"
             }
           ],
           "order": 0,
-          "title": "WTM Taipei Ambassador"
+          "title": "助教小幫手"
         },
         {
-          "name": "Cristine Chen",
-          "photo": "/images/people/dmytro_danylyk.jpg",
+          "name": "ya-chieh",
           "photoUrl": "",
+          "order": 1,
+          "title": "助教小幫手"
+        },{
+          "name": "王馨儀",
+          "photoUrl": "",
+          "order": 2,
+          "title": "助教小幫手"
+        },{
+          "name": "Denny",
+          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2FDenny.jpg?alt=media&token=d49b510e-3126-4913-9a04-7d7811865a45",
           "socials": [
             {
-              "icon": "gplus",
-              "link": "https://plus.google.com/+DmytroDanylyk",
-              "name": "Google+"
-            },
-            {
-              "icon": "twitter",
-              "link": "https://twitter.com/dmytrodanylyk",
-              "name": "Twitter"
-            },
-            {
+              "icon": "facebook",
+              "link": "https://www.facebook.com/denny821101",
+              "name": "Facebook"
+            },{
+              "icon": "linkedin",
+              "link": "https://www.linkedin.com/in/cyhuang1230/",
+              "name": "Linkedin"
+            },{
               "icon": "website",
-              "link": "http://www.dmytrodanylyk.com/#/about",
-              "name": "Website"
+              "link": "https://cyhuang1230.github.io/",
+              "name": "Blog"
             }
           ],
-          "order": 1,
-          "title": "WTM Taipei Ambassador"
+          "order": 3,
+          "title": "助教小幫手"
+        },{
+          "name": "蘇桑平 / Ann",
+          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2FAnnSu.jpg?alt=media&token=63f1c8b0-f46d-463f-84cb-b148544b30f8",
+          "socials": [
+            {
+              "icon": "facebook",
+              "link": "https://www.facebook.com/profile.php?id=100022603445644",
+              "name": "Facebook"
+            },{
+              "icon": "linkedin",
+              "link": "http://linkedin.com/in/ann-su-8313a7176",
+              "name": "Linkedin"
+            }
+          ],
+          "order": 4,
+          "title": "助教小幫手"
         }
       ],
-      "title": "Program Committee"
+      "title": "助教組"
     }
   ],
   "tickets": [
