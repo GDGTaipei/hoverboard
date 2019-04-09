@@ -1866,7 +1866,7 @@
         },
         {
           "name": "Vanessa Lu",
-          "photoUrl": "",
+          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2FVanessa%20Lu.jpg?alt=media&token=ff9a7cca-2f5e-437e-8fac-90e753c24aa2",
           "socials": [
             {
               "icon": "facebook",
@@ -1900,7 +1900,7 @@
         },
         {
           "name": "Lu Lu",
-          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fpeople%2Fdiana_pinchuk.jpg?alt=media&token=189d67d1-004f-4a3c-9e0c-13bc992bbaf7",
+          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2FLuluNai.jpg?alt=media&token=0c91e3a8-62ec-49a9-8b61-8b3132b4faa7",
           "socials": [
             {
               "icon": "facebook",
@@ -2018,25 +2018,31 @@
       "members": [
         {
           "name": "SUSU",
-          "photoUrl": "",
-          "order": 0,
-          "title": "機動組組員"
-        },{
-          "name": "SUSU",
-          "photoUrl": "",
+          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2FSUSU%E8%98%87%E8%98%87.jpeg?alt=media&token=2a9046a3-b30d-4d00-8ea4-32b23e1f6903",
           "socials": [
             {
               "icon": "facebook",
-              "link": "https://www.facebook.com/anderson.huang.7",
+              "link": "https://www.facebook.com/sudosu.tw",
               "name": "Facebook"
             }
           ],
-          "order": 1,
+          "order": 0,
           "title": "機動組組員"
         },{
           "name": "Kris",
-          "photoUrl": "",
-          "order": 2,
+          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2FKrisLi.jpeg?alt=media&token=77cd62ff-2aa6-4349-8c37-d1ccc5ae41d2",
+          "socials": [
+            {
+              "icon": "facebook",
+              "link": "https://www.facebook.com/kris810",
+              "name": "Facebook"
+            },{
+              "icon": "linkedin",
+              "link": "https://www.linkedin.com/in/kris-l-2476a7148/",
+              "name": "Linkedin"
+            }
+          ],
+          "order": 1,
           "title": "機動組組員"
         },{
           "name": "Alison",
@@ -2052,11 +2058,18 @@
               "name": "Linkedin"
             }
           ],
-          "order": 3,
+          "order": 2,
           "title": "機動組組員"
         },{
-          "name": "Ivan",
-          "order": 4,
+          "name": "Ivan Wen",
+          "socials": [
+            {
+              "icon": "facebook",
+              "link": "https://www.facebook.com/windflytiger",
+              "name": "Facebook"
+            }
+          ],
+          "order": 3,
           "title": "機動組組員"
         },{
           "name": "蘇怡嘉",
@@ -2067,7 +2080,7 @@
               "name": "Facebook"
             }
           ],
-          "order": 5,
+          "order": 4,
           "title": "機動組組員"
 
         }
