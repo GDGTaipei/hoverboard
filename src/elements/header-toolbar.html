@@ -19,17 +19,17 @@
         color: var(--primary-text-color);
       }
 
-      :host([transparent]) {
+      /* :host([transparent]) {
         --iron-icon-fill-color: var(--hero-font-color, '#fff');
         background-color: transparent;
         border-bottom-color: transparent;
         color: var(--hero-font-color, '#fff');
-      }
+      } */
 
-      :host([transparent]) .toolbar-logo {
+      /* :host([transparent]) .toolbar-logo {
         background-color: var(--hero-logo-color);
         opacity: var(--hero-logo-opacity, 1);
-      }
+      } */
 
       app-toolbar {
         margin: 0 auto;
@@ -40,11 +40,9 @@
 
       .toolbar-logo {
         display: block;
-        width: 150px;
-        height: 32px;
-        background-color: var(--default-primary-color);
-        transition: background-color var(--animation);
-        -webkit-mask: url('/images/logo-monochrome.svg') no-repeat;
+        width: 210px;
+        height: 30px;
+        background: url(/images/logo_WT.svg) no-repeat center center / contain;
       }
 
       .nav-items {
@@ -114,6 +112,7 @@
 
       .buy-button {
         margin-top: 12px;
+        background-color: #4588F5 !important;
       }
 
       @media (min-width: 640px) {

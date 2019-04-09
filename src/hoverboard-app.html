@@ -95,6 +95,7 @@
 
       .toolbar-logo {
         --iron-image-height: 32px;
+        --iron-image-width: 210px;
       }
 
       app-header-layout {
@@ -146,7 +147,7 @@
 
       <app-drawer id="drawer" slot="drawer" opened="[[ui.isDrawerOpened]]" swipe-open>
         <app-toolbar layout vertical start>
-          <plastic-image class="toolbar-logo" srcset="/images/logo-monochrome.svg" alt="{$ title $}"></plastic-image>
+          <plastic-image class="toolbar-logo" srcset="/images/logo_WT.svg" alt="{$ title $}"></plastic-image>
           <h2 class="dates">{$ dates $}</h2>
           <h3 class="location">{$ location.short $}</h3>
         </app-toolbar>
