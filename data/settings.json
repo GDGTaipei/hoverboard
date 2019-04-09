@@ -9,8 +9,8 @@
   "endDate": "2017-10-14T19:00:00+03:00",
   "webapp": {
     "shortName": "IWD'19 Taipei",
-    "themeColor": "#673AB7",
-    "backgroundColor": "#673AB7"
+    "themeColor": "#4588F5",
+    "backgroundColor": "#4588F5"
   },
   "dateFormat": {
     "locale": "en-US"
@@ -49,8 +49,8 @@
     "home": {
       "description": "Raise Your Voice! 踴於發聲!",
       "background": {
-        "color": "#673ab7",
-        "image": "/images/backgrounds/home.jpg"
+        "color": "#4588F5",
+        "image": "/images/backgrounds/banner_2019_v2.png"
       },
       "fontColor": "#FFF"
     },
