@@ -1883,7 +1883,7 @@
           "title": "設計組"
         },
         {
-          "name": "Lu Lu",
+          "name": "Lulu",
           "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2FLuluNai.jpg?alt=media&token=0c91e3a8-62ec-49a9-8b61-8b3132b4faa7",
           "socials": [
             {
@@ -1933,7 +1933,7 @@
           "title": "助教小幫手"
         },
         {
-          "name": "ya-chieh",
+          "name": "Ya-Chieh",
           "photoUrl": "",
           "order": 1,
           "title": "助教小幫手"
@@ -1984,7 +1984,86 @@
     },{
       "members": [
         {
-          "name": "黃啟賢(Anderson)",
+          "name": "許茜蓉",
+          "photoUrl": "",
+          "socials": [
+            {
+              "icon": "linkedin",
+              "link": "https://www.linkedin.com/in/chienrongkhor/",
+              "name": "Linkedin"
+            },
+            {
+              "icon": "website",
+              "link": "https://medium.com/@chienrongkhor",
+              "name": "Blog"
+            }
+          ],
+          "order": 0,
+          "title": "網頁組組員"
+        }
+      ],
+      "title": "網頁組"
+    },{
+      "members": [
+        {
+          "name": "阿金 / Gin",
+          "photoUrl": "",
+          "socials": [
+            {
+              "icon": "facebook",
+              "link": "https://www.facebook.com/einestein.wasser",
+              "name": "Facebook"
+            },
+            {
+              "icon": "linkedin",
+              "link": "https://www.linkedin.com/in/shaopingchen/",
+              "name": "Linkedin"
+            }
+          ],
+          "order": 0,
+          "title": "設計組組員"
+        },
+        {
+          "name": "Jessica",
+          "photoUrl": "",
+          "socials": [
+            {
+              "icon": "facebook",
+              "link": "https://www.facebook.com/profile.php?id=100000526029074",
+              "name": "Facebook"
+            }
+          ],
+          "order": 1,
+          "title": "設計組組員"
+        }
+      ],
+      "title": "設計組"
+    },{
+      "members": [
+        {
+          "name": "Esther",
+          "photoUrl": "",
+          "socials": [
+            {
+              "icon": "facebook",
+              "link": "https://www.facebook.com/esther72727",
+              "name": "Facebook"
+            },
+            {
+              "icon": "linkedin",
+              "link": "https://www.linkedin.com/in/esther-hsu-a08900106/",
+              "name": "Linkedin"
+            }
+          ],
+          "order": 0,
+          "title": "行銷組組員"
+        }
+      ],
+      "title": "行銷組"
+    },{
+      "members": [
+        {
+          "name": "黃啟賢 / Anderson",
           "photoUrl": "",
           "socials": [
             {
@@ -1994,7 +2073,13 @@
             }
           ],
           "order": 0,
-          "title": "攝影組 / Photographer"
+          "title": "攝影組組員"
+        },
+        {
+          "name": "苡瑄",
+          "photoUrl": "",
+          "order": 1,
+          "title": "攝影組組員"
         }
       ],
       "title": "攝影組"
@@ -2070,6 +2155,94 @@
         }
       ],
       "title": "機動組"
+    },{
+      "members": [
+        {
+          "name": "33",
+          "photoUrl": "",
+          "socials": [
+            {
+              "icon": "facebook",
+              "link": "https://www.facebook.com/profile.php?id=100000837139485",
+              "name": "Facebook"
+            }
+          ],
+          "order": 0,
+          "title": "贊助組組員"
+        },
+        {
+          "name": "Fiona",
+          "photoUrl": "",
+          "order": 1,
+          "title": "贊助組組員"
+        }
+      ],
+      "title": "贊助組"
+    },{
+      "members": [
+        {
+          "name": "Sunny",
+          "photoUrl": "",
+          "socials": [
+            {
+              "icon": "facebook",
+              "link": "https://www.facebook.com/profile.php?id=100000223117833",
+              "name": "Facebook"
+            }
+          ],
+          "order": 0,
+          "title": "議程組組員"
+        },
+        {
+          "name": "凱云",
+          "photoUrl": "",
+          "order": 1,
+          "title": "議程組組員"
+        },
+        {
+          "name": "Chloe",
+          "photoUrl": "",
+          "socials": [
+            {
+              "icon": "facebook",
+              "link": "https://www.facebook.com/houhou.xu",
+              "name": "Facebook"
+            }
+          ],
+          "order": 2,
+          "title": "議程組組員"
+        },
+        {
+          "name": "Benson",
+          "photoUrl": "",
+          "order": 3,
+          "title": "議程組組員"
+        },
+        {
+          "name": "Alyssa",
+          "photoUrl": "",
+          "socials": [
+            {
+              "icon": "facebook",
+              "link": "https://www.facebook.com/halloalyssa",
+              "name": "Facebook"
+            },
+            {
+              "icon": "linkedin",
+              "link": "https://www.linkedin.com/in/alyssachentw/",
+              "name": "Linkedin"
+            },
+            {
+              "icon": "website",
+              "link": "https://medium.com/@alyssachen",
+              "name": "Blog"
+            }
+          ],
+          "order": 4,
+          "title": "議程組組員"
+        }
+      ],
+      "title": "議程組"
     }
   ],
   "tickets": [
