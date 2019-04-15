@@ -115,7 +115,7 @@
       "dateReadable": "April 27",
       "timeslots": [
         {
-          "endTime": "10:00",
+          "endTime": "09:30",
           "sessions": [
             {
               "items": [
@@ -126,68 +126,7 @@
           "startTime": "09:00"
         },
         {
-          "endTime": "10:15",
-          "sessions": [
-            {
-              "items": [
-                136
-              ]
-            }
-          ],
-          "startTime": "10:00"
-        },
-        {
-          "endTime": "11:00",
-          "sessions": [
-            {
-              "items": [
-                139
-              ]
-            }
-          ],
-          "startTime": "10:15"
-        },
-        {
-          "endTime": "11:40",
-          "sessions": [
-            {
-              "items": [
-                103,
-                112
-              ]
-            },
-            {
-              "items": [
-                120
-              ]
-            },
-            {
-              "extend": 3,
-              "items": [
-                109
-              ]
-            }
-          ],
-          "startTime": "11:00"
-        },
-        {
-          "endTime": "12:30",
-          "sessions": [
-            {
-              "items": [
-                129
-              ]
-            },
-            {
-              "items": [
-                116
-              ]
-            }
-          ],
-          "startTime": "11:50"
-        },
-        {
-          "endTime": "14:00",
+          "endTime": "10:00",
           "sessions": [
             {
               "items": [
@@ -195,48 +134,10 @@
               ]
             }
           ],
-          "startTime": "12:30"
+          "startTime": "09:30"
         },
         {
-          "endTime": "14:40",
-          "sessions": [
-            {
-              "items": [
-                101
-              ]
-            },
-            {
-              "items": [
-                118
-              ]
-            },
-            {
-              "extend": 2,
-              "items": [
-                107
-              ]
-            }
-          ],
-          "startTime": "14:00"
-        },
-        {
-          "endTime": "15:30",
-          "sessions": [
-            {
-              "items": [
-                140
-              ]
-            },
-            {
-              "items": [
-                126
-              ]
-            }
-          ],
-          "startTime": "14:50"
-        },
-        {
-          "endTime": "16:00",
+          "endTime": "10:30",
           "sessions": [
             {
               "items": [
@@ -244,64 +145,32 @@
               ]
             }
           ],
-          "startTime": "15:30"
+          "startTime": "10:00"
         },
         {
-          "endTime": "16:40",
+          "endTime": "10:40",
           "sessions": [
             {
               "items": [
-                105
-              ]
-            },
-            {
-              "items": [
-                127
-              ]
-            },
-            {
-              "extend": 3,
-              "items": [
-                119
+                135
               ]
             }
           ],
-          "startTime": "16:00"
+          "startTime": "10:30"
         },
         {
-          "endTime": "17:30",
+          "endTime": "11:30",
           "sessions": [
             {
               "items": [
-                112
-              ]
-            },
-            {
-              "items": [
-                111
+                136
               ]
             }
           ],
-          "startTime": "16:50"
+          "startTime": "10:40"
         },
         {
-          "endTime": "18:20",
-          "sessions": [
-            {
-              "items": [
-                106
-              ]
-            },
-            {
-              "items": [
-                125
-              ]
-            }
-          ],
-          "startTime": "17:40"
-        },
-        {
-          "endTime": "22:30",
+          "endTime": "13:00",
           "sessions": [
             {
               "items": [
@@ -309,7 +178,82 @@
               ]
             }
           ],
-          "startTime": "18:30"
+          "startTime": "11:30"
+        },
+        {
+          "endTime": "14:30",
+          "sessions": [
+            {
+              "items": [
+                138
+              ]
+            },
+            {
+              "items": [
+                139
+              ]
+            },
+            {
+              "items": [
+                140
+              ]
+            }
+          ],
+          "startTime": "13:00"
+        },
+        {
+          "endTime": "15:00",
+          "sessions": [
+            {
+              "items": [
+                141
+              ]
+            }
+          ],
+          "startTime": "14:30"
+        },
+        {
+          "endTime": "16:30",
+          "sessions": [
+            {
+              "items": [
+                142
+              ]
+            },
+            {
+              "items": [
+                143
+              ]
+            },
+            {
+              "items": [
+                144
+              ]
+            }
+          ],
+          "startTime": "15:00"
+        },
+        {
+          "endTime": "17:00",
+          "sessions": [
+            {
+              "items": [
+                145
+              ]
+            }
+          ],
+          "startTime": "16:30"
+        },
+        {
+          "endTime": "17:30",
+          "sessions": [
+            {
+              "items": [
+                146
+              ]
+            }
+          ],
+          "startTime": "17:00"
         }
       ],
       "tracks": [
@@ -731,56 +675,96 @@
       "title": "Deal with it: Android DataBinding explained"
     },
     "132": {
-      "description": "Get your badge, coffee, enjoy talking with tech edicts around",
+      "description": "",
       "icon": "registration",
       "image": "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fbackgrounds%2Fregistration.jpg?alt=media&token=27328646-d323-4cca-904c-75f021bc3ffe",
-      "title": "Registration & morning Coffee"
+      "title": "Registration"
     },
     "133": {
-      "description": "Foooooooood!",
-      "icon": "lunch",
+      "description": "",
+      "icon": "opening",
       "image": "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fbackgrounds%2Flunch.jpg?alt=media&token=bc82aaff-92cc-4dcc-a00e-2b6f30a40225",
-      "title": "Lunch"
+      "title": "Welcoming Remarks"
     },
     "134": {
-      "description": "Coffeeeeeee!",
-      "icon": "coffee-break",
+      "description": "",
+      "icon": "",
       "image": "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fbackgrounds%2Fcoffee-break.jpg?alt=media&token=7c2c929b-cb94-4be8-a05a-b3f678136cb7",
-      "title": "Coffee break"
+      "title": "Keynote + Q&A"
     },
     "135": {
-      "description": "Coffeeeeeee!",
-      "icon": "coffee-break",
+      "description": "",
+      "icon": "",
       "image": "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fbackgrounds%2Fmorning.jpg?alt=media&token=d0da3d64-fc63-48c6-9d41-1460451dca64",
-      "title": "Morning coffee"
+      "title": "Sponsors Talk / Game"
     },
     "136": {
-      "description": "Official start of the conference. Greetings from the organizers, sponsors and partners.",
-      "icon": "opening",
+      "description": "",
+      "icon": "",
       "image": "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fbackgrounds%2Fopening.jpg?alt=media&token=aa52dd45-50c9-4e36-9485-c1f9138ecd6b",
-      "language": "English",
-      "title": "GDG DevFest Ukraine 2016 Opening"
+      "title": "Panel Discussion"
     },
     "137": {
-      "description": "Afterparty is a great time to have some fun and meet new people",
-      "icon": "party",
+      "description": "",
+      "icon": "lunch",
       "image": "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fbackgrounds%2Fparty.jpg?alt=media&token=8e413f01-373a-40bf-bb87-1dcf1d8e6af1",
-      "title": "Afterparty & Networking"
+      "title": "Lunch & Networking"
     },
     "138": {
-      "description": "Make sure you won't miss closing ceremony, all gifts from out sponsors and partners will find their owners during this session.",
+      "description": "",
       "image": "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fbackgrounds%2Fclosing.jpg?alt=media&token=f02d014a-09ee-407e-88c7-b74093e00fed",
-      "title": "Conference closing and contest winners announcements"
+      "title": "Workshop - #I AM Remarkable",
+      "speakers": [
+        "Cristine C"
+      ]
     },
     "139": {
       "description": "",
-      "language": "English",
-      "title": "Keynote"
+      "title": "Tech Talk #1 - Data Studio",
+      "speakers": [
+        "Winnie"
+      ]
     },
     "140": {
-      "description": "TBD",
-      "language": "English",
-      "title": "TBD"
+      "description": "",
+      "title": "Code Lab #2 - Actions on Google",
+      "speakers": [
+        "Sunny"
+      ]
+    },
+    "141": {
+      "description": "",
+      "icon": "coffee-break",
+      "title": "Break Time"
+    },
+    "142": {
+      "description": "",
+      "title": "Workshop - Speechless",
+      "speakers": [
+        "Christine C"
+      ]
+    },
+    "143": {
+      "description": "",
+      "title": "Tech Talk #1 - 零基礎也能開始！DEXON DApp 實作技術分享",
+      "speakers": [
+        "Annie"
+      ]
+    },
+    "144": {
+      "description": "",
+      "title": "Code Lab #2 - Actions on Google",
+      "speakers": [
+        "Sunny"
+      ]
+    },
+    "145": {
+      "description": "",
+      "title": "Closing Remarks"
+    },
+    "146": {
+      "description": "",
+      "title": "Networking"
     }
   },
   "speakers": {
@@ -1899,7 +1883,7 @@
           "title": "設計組"
         },
         {
-          "name": "Lu Lu",
+          "name": "Lulu",
           "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2FLuluNai.jpg?alt=media&token=0c91e3a8-62ec-49a9-8b61-8b3132b4faa7",
           "socials": [
             {
@@ -1949,7 +1933,7 @@
           "title": "助教小幫手"
         },
         {
-          "name": "ya-chieh",
+          "name": "Ya-Chieh",
           "photoUrl": "",
           "order": 1,
           "title": "助教小幫手"
@@ -2000,7 +1984,86 @@
     },{
       "members": [
         {
-          "name": "黃啟賢(Anderson)",
+          "name": "許茜蓉",
+          "photoUrl": "",
+          "socials": [
+            {
+              "icon": "linkedin",
+              "link": "https://www.linkedin.com/in/chienrongkhor/",
+              "name": "Linkedin"
+            },
+            {
+              "icon": "website",
+              "link": "https://medium.com/@chienrongkhor",
+              "name": "Blog"
+            }
+          ],
+          "order": 0,
+          "title": "網頁組組員"
+        }
+      ],
+      "title": "網頁組"
+    },{
+      "members": [
+        {
+          "name": "阿金 / Gin",
+          "photoUrl": "",
+          "socials": [
+            {
+              "icon": "facebook",
+              "link": "https://www.facebook.com/einestein.wasser",
+              "name": "Facebook"
+            },
+            {
+              "icon": "linkedin",
+              "link": "https://www.linkedin.com/in/shaopingchen/",
+              "name": "Linkedin"
+            }
+          ],
+          "order": 0,
+          "title": "設計組組員"
+        },
+        {
+          "name": "Jessica",
+          "photoUrl": "",
+          "socials": [
+            {
+              "icon": "facebook",
+              "link": "https://www.facebook.com/profile.php?id=100000526029074",
+              "name": "Facebook"
+            }
+          ],
+          "order": 1,
+          "title": "設計組組員"
+        }
+      ],
+      "title": "設計組"
+    },{
+      "members": [
+        {
+          "name": "Esther",
+          "photoUrl": "",
+          "socials": [
+            {
+              "icon": "facebook",
+              "link": "https://www.facebook.com/esther72727",
+              "name": "Facebook"
+            },
+            {
+              "icon": "linkedin",
+              "link": "https://www.linkedin.com/in/esther-hsu-a08900106/",
+              "name": "Linkedin"
+            }
+          ],
+          "order": 0,
+          "title": "行銷組組員"
+        }
+      ],
+      "title": "行銷組"
+    },{
+      "members": [
+        {
+          "name": "黃啟賢 / Anderson",
           "photoUrl": "",
           "socials": [
             {
@@ -2010,7 +2073,13 @@
             }
           ],
           "order": 0,
-          "title": "攝影組 / Photographer"
+          "title": "攝影組組員"
+        },
+        {
+          "name": "苡瑄",
+          "photoUrl": "",
+          "order": 1,
+          "title": "攝影組組員"
         }
       ],
       "title": "攝影組"
@@ -2086,6 +2155,94 @@
         }
       ],
       "title": "機動組"
+    },{
+      "members": [
+        {
+          "name": "33",
+          "photoUrl": "",
+          "socials": [
+            {
+              "icon": "facebook",
+              "link": "https://www.facebook.com/profile.php?id=100000837139485",
+              "name": "Facebook"
+            }
+          ],
+          "order": 0,
+          "title": "贊助組組員"
+        },
+        {
+          "name": "Fiona",
+          "photoUrl": "",
+          "order": 1,
+          "title": "贊助組組員"
+        }
+      ],
+      "title": "贊助組"
+    },{
+      "members": [
+        {
+          "name": "Sunny",
+          "photoUrl": "",
+          "socials": [
+            {
+              "icon": "facebook",
+              "link": "https://www.facebook.com/profile.php?id=100000223117833",
+              "name": "Facebook"
+            }
+          ],
+          "order": 0,
+          "title": "議程組組員"
+        },
+        {
+          "name": "凱云",
+          "photoUrl": "",
+          "order": 1,
+          "title": "議程組組員"
+        },
+        {
+          "name": "Chloe",
+          "photoUrl": "",
+          "socials": [
+            {
+              "icon": "facebook",
+              "link": "https://www.facebook.com/houhou.xu",
+              "name": "Facebook"
+            }
+          ],
+          "order": 2,
+          "title": "議程組組員"
+        },
+        {
+          "name": "Benson",
+          "photoUrl": "",
+          "order": 3,
+          "title": "議程組組員"
+        },
+        {
+          "name": "Alyssa",
+          "photoUrl": "",
+          "socials": [
+            {
+              "icon": "facebook",
+              "link": "https://www.facebook.com/halloalyssa",
+              "name": "Facebook"
+            },
+            {
+              "icon": "linkedin",
+              "link": "https://www.linkedin.com/in/alyssachentw/",
+              "name": "Linkedin"
+            },
+            {
+              "icon": "website",
+              "link": "https://medium.com/@alyssachen",
+              "name": "Blog"
+            }
+          ],
+          "order": 4,
+          "title": "議程組組員"
+        }
+      ],
+      "title": "議程組"
     }
   ],
   "tickets": [
