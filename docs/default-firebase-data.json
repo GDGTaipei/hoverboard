@@ -1720,7 +1720,7 @@
       "members": [
         {
           "name": "Mia Yu",
-          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2Fmia.yu.jpg?alt=media&token=571abd75-cef6-4e3e-91a2-d6b8ebabc1fe",
+          "photoUrl": "/images/members/mia.jpg",
           "socials": [
             {
               "icon": "gplus",
@@ -1753,7 +1753,7 @@
         },
         {
           "name": "Christine Chen",
-          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2FCristine.jpg?alt=media&token=6d28e3d3-9969-4b47-8498-febcc5e2ff6f",
+          "photoUrl": "/images/members/Cristine.jpg",
           "socials": [
             {
               "icon": "facebook",
@@ -1781,7 +1781,7 @@
         },
         {
           "name": "Eva Chu",
-          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2FEvAChU.JPG?alt=media&token=c2889002-499c-4377-a429-0c747ad68172",
+          "photoUrl": "/images/members/EvAChU.jpg",
           "socials": [
             {
               "icon": "facebook",
@@ -1808,7 +1808,7 @@
         },
         {
           "name": "Ann Lin",
-          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2FAnn.jpg?alt=media&token=5526c78c-cd51-4786-af64-3be8c72ea189",
+          "photoUrl": "/images/members/Ann.jpg",
           "socials": [
             {
               "icon": "facebook",
@@ -1825,7 +1825,7 @@
         },
         {
           "name": "Annie",
-          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2FAnnie.jpg?alt=media&token=6a643e14-13f7-416e-9f01-e0eb0e5ca4e8",
+          "photoUrl": "/images/members/Annie.jpg",
           "socials": [
             {
               "icon": "facebook",
@@ -1850,7 +1850,7 @@
         },
         {
           "name": "Vanessa Lu",
-          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2FVanessa%20Lu.jpg?alt=media&token=ff9a7cca-2f5e-437e-8fac-90e753c24aa2",
+          "photoUrl": "/images/members/VanessaLu.png",
           "socials": [
             {
               "icon": "facebook",
@@ -1867,7 +1867,7 @@
         },
         {
           "name": "陳小水",
-          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2FWater_Chen.jpg?alt=media&token=6c691c3a-b721-4444-aff6-7f7f0995aec8",
+          "photoUrl": "/images/members/Water_Chen.jpg",
           "socials": [
             {
               "icon": "facebook",
@@ -1884,7 +1884,7 @@
         },
         {
           "name": "Lulu",
-          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2FLuluNai.jpg?alt=media&token=0c91e3a8-62ec-49a9-8b61-8b3132b4faa7",
+          "photoUrl": "/images/members/LuluNai.jpg",
           "socials": [
             {
               "icon": "facebook",
@@ -1897,13 +1897,13 @@
         },
         {
           "name": "Blake",
-          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2FBlake.jpg?alt=media&token=9c027689-fd7f-424b-be46-3971462c8971",
+          "photoUrl": "/images/members/Blake.jpg",
           "order": 8,
           "title": "攝影組"
         },
         {
           "name": "Kevin",
-          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2Fkevin_chiu.jpg?alt=media&token=f1f57742-da8f-4646-a190-5e87884d4bf0",
+          "photoUrl": "/images/members/kevin_chiu.jpg",
           "socials": [
             {
               "icon": "facebook",
@@ -1921,7 +1921,7 @@
       "members": [
         {
           "name": "小山羌 / Amy",
-          "photoUrl": "",
+          "photoUrl": "/images/members/LinAmy.gif",
           "socials": [
             {
               "icon": "facebook",
@@ -1934,17 +1934,17 @@
         },
         {
           "name": "Ya-Chieh",
-          "photoUrl": "",
+          "photoUrl": "/images/members/AngelaWu.jpg",
           "order": 1,
           "title": "助教小幫手"
         },{
           "name": "王馨儀",
-          "photoUrl": "",
+          "photoUrl": "/images/members/wang.jpeg",
           "order": 2,
           "title": "助教小幫手"
         },{
           "name": "Denny",
-          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2FDenny.jpg?alt=media&token=d49b510e-3126-4913-9a04-7d7811865a45",
+          "photoUrl": "/images/members/Denny.jpg",
           "socials": [
             {
               "icon": "facebook",
@@ -1964,7 +1964,7 @@
           "title": "助教小幫手"
         },{
           "name": "蘇桑平 / Ann",
-          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2FAnnSu.jpg?alt=media&token=63f1c8b0-f46d-463f-84cb-b148544b30f8",
+          "photoUrl": "/images/members/AnnSu.jpg",
           "socials": [
             {
               "icon": "facebook",
@@ -1984,7 +1984,7 @@
     },{
       "members": [
         {
-          "name": "許茜蓉",
+          "name": "Sarah",
           "photoUrl": "",
           "socials": [
             {
@@ -2007,7 +2007,7 @@
       "members": [
         {
           "name": "阿金 / Gin",
-          "photoUrl": "",
+          "photoUrl": "/images/members/Gin.jpg",
           "socials": [
             {
               "icon": "facebook",
@@ -2025,7 +2025,7 @@
         },
         {
           "name": "Jessica",
-          "photoUrl": "",
+          "photoUrl": "/images/members/Jessica.jpg",
           "socials": [
             {
               "icon": "facebook",
@@ -2042,7 +2042,7 @@
       "members": [
         {
           "name": "Esther",
-          "photoUrl": "",
+          "photoUrl": "/images/members/Esther.jpg",
           "socials": [
             {
               "icon": "facebook",
@@ -2064,7 +2064,7 @@
       "members": [
         {
           "name": "黃啟賢 / Anderson",
-          "photoUrl": "",
+          "photoUrl": "/images/members/Anderson.jpg",
           "socials": [
             {
               "icon": "facebook",
@@ -2077,7 +2077,7 @@
         },
         {
           "name": "苡瑄",
-          "photoUrl": "",
+          "photoUrl": "/images/members/IrisWu.JPG",
           "order": 1,
           "title": "攝影組組員"
         }
@@ -2086,8 +2086,8 @@
     },{
       "members": [
         {
-          "name": "SUSU",
-          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2FSUSU%E8%98%87%E8%98%87.jpeg?alt=media&token=2a9046a3-b30d-4d00-8ea4-32b23e1f6903",
+          "name": "蘇怡嘉",
+          "photoUrl": "/images/members/SUSU.jpg",
           "socials": [
             {
               "icon": "facebook",
@@ -2098,8 +2098,8 @@
           "order": 0,
           "title": "機動組組員"
         },{
-          "name": "Kris",
-          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2FKrisLi.jpeg?alt=media&token=77cd62ff-2aa6-4349-8c37-d1ccc5ae41d2",
+          "name": "Kris Li",
+          "photoUrl": "/images/members/KrisLi.jpg",
           "socials": [
             {
               "icon": "facebook",
@@ -2115,7 +2115,7 @@
           "title": "機動組組員"
         },{
           "name": "Alison",
-          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/iwd-19-taipei-hoverboard.appspot.com/o/people%2FAlisonmeng.JPG?alt=media&token=f2436b29-d28d-48b0-a02a-4148c82c1b93",
+          "photoUrl": "/images/members/Alisonmeng.jpg",
           "socials": [
             {
               "icon": "facebook",
@@ -2131,6 +2131,7 @@
           "title": "機動組組員"
         },{
           "name": "Ivan Wen",
+          "photoUrl": "/images/members/Ivan.jpg",
           "socials": [
             {
               "icon": "facebook",
@@ -2140,18 +2141,6 @@
           ],
           "order": 3,
           "title": "機動組組員"
-        },{
-          "name": "蘇怡嘉",
-          "socials": [
-            {
-              "icon": "facebook",
-              "link": "https://www.facebook.com/sudosu.tw",
-              "name": "Facebook"
-            }
-          ],
-          "order": 4,
-          "title": "機動組組員"
-
         }
       ],
       "title": "機動組"
@@ -2159,7 +2148,7 @@
       "members": [
         {
           "name": "33",
-          "photoUrl": "",
+          "photoUrl": "/images/members/33.jpg",
           "socials": [
             {
               "icon": "facebook",
@@ -2182,7 +2171,7 @@
       "members": [
         {
           "name": "Sunny",
-          "photoUrl": "",
+          "photoUrl": "/images/members/sunnykao.jpg",
           "socials": [
             {
               "icon": "facebook",
@@ -2195,13 +2184,13 @@
         },
         {
           "name": "凱云",
-          "photoUrl": "",
+          "photoUrl": "/images/members/Christina.jpeg",
           "order": 1,
           "title": "議程組組員"
         },
         {
           "name": "Chloe",
-          "photoUrl": "",
+          "photoUrl": "/images/members/ChloeHsu.jpg",
           "socials": [
             {
               "icon": "facebook",
@@ -2214,13 +2203,13 @@
         },
         {
           "name": "Benson",
-          "photoUrl": "",
+          "photoUrl": "/images/members/AnnieHuang.png",
           "order": 3,
           "title": "議程組組員"
         },
         {
           "name": "Alyssa",
-          "photoUrl": "",
+          "photoUrl": "/images/members/Alyssa.jpg",
           "socials": [
             {
               "icon": "facebook",
@@ -2239,6 +2228,24 @@
             }
           ],
           "order": 4,
+          "title": "議程組組員"
+        },
+        {
+          "name": "Vanessa Leung",
+          "photoUrl": "/images/members/VanessaLeung.jpg",
+          "socials": [
+            {
+              "icon": "facebook",
+              "link": "https://www.facebook.com/vanessaaleung",
+              "name": "Facebook"
+            },
+            {
+              "icon": "linkedin",
+              "link": "https://www.linkedin.com/in/vanessaaleung/",
+              "name": "Linkedin"
+            }
+          ],
+          "order": 5,
           "title": "議程組組員"
         }
       ],
