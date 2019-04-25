@@ -240,7 +240,7 @@
     "blocks": [
       {
         "title": "主辦",
-        "description": "<a href='https://www.facebook.com/groups/WTMTaipei' target='_blank'>WTM Taipei</a>Women Techmaker ( 簡稱 WTM ) 是 Google 為處於科技產業的女性提供能見度，社群以及資源的一項計畫。藉由 Google Developer Group ( 簡稱 GDG ) 分享資訊，舉辦女性有興趣的科技活動，希望有更多女性加入科技產業。若男性對活動有興趣，也歡迎來參加。",
+        "description": "<a href='https://www.facebook.com/groups/WTMTaipei' target='_blank'>Women Techmakers (WTM) Taipei</a> - Women Techmakers 是 Google 為處於科技產業的女性提供能見度，社群以及資源的一項計畫。藉由 Google Developer Group (簡稱 GDG) 分享資訊，舉辦女性有興趣的科技活動，希望有更多女性加入科技產業。若男性對活動有興趣，也歡迎來參加。",
         "callToAction": {
           "label": "打開團隊頁面",
           "link": "/team"
