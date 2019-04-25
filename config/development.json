@@ -1,14 +1,14 @@
 {
   "basepath": "/",
-  "url": "https://iwd-19-taipei-hoverboard.firebaseapp.com/",
+  "url": "https://iwd-19-gdg-taipei.firebaseapp.com/",
   "analytics": "UA-124004035-1",
   "prefix": "/",
   "firebase": {
-    "apiKey": "AIzaSyAjFgupcbA7FeEIbABuXCdxJNBWol_WhXA",
-    "authDomain": "iwd-19-taipei-hoverboard.firebaseapp.com",
-    "databaseURL": "https://iwd-19-taipei-hoverboard.firebaseio.com",
-    "projectId": "iwd-19-taipei-hoverboard",
-    "storageBucket": "iwd-19-taipei-hoverboard.appspot.com",
+    "apiKey": "1fb48b21dad2e9136f5ec52dec34d973da3dcf6c",
+    "authDomain": "iwd-19-gdg-taipei.firebaseapp.com",
+    "databaseURL": "https://iwd-19-gdg-taipei.firebaseio.com",
+    "projectId": "iwd-19-gdg-taipei",
+    "storageBucket": "iwd-19-gdg-taipei.appspot.com",
     "messagingSenderId": "90091288267"
   },
   "googleMapApiKey": "AIzaSyAwD3hcFlrbiYjhbjjB_GxbDMmStoEdsVE"
