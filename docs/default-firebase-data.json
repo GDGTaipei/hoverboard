@@ -89,21 +89,21 @@
         },
         {
           "order": 1,
-          "logoUrl": "../images/logos/gdg-x.svg",
+          "logoUrl": "../images/logos/gdg_taipei.svg",
           "name": "GDG Taipei",
-          "url": "https://github.com/gdg-x"
+          "url": "https://www.meetup.com/GDGTaipei/"
         },
         {
           "order": 2,
-          "logoUrl": "../images/logos/google.svg",
+          "logoUrl": "../images/logos/appworks.svg",
           "name": "AppWorks",
-          "url": "https://www.google.com.ua/intl/en/about/"
+          "url": "https://appworks.tw"
         },
         {
           "order": 3,
-          "logoUrl": "../images/logos/gdg-x.svg",
+          "logoUrl": "../images/logos/appworks_school.svg",
           "name": "AppWorks School",
-          "url": "https://github.com/gdg-x"
+          "url": "https://school.appworks.tw/"
         }
       ],
       "order": 1,
