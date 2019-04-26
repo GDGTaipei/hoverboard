@@ -94,13 +94,13 @@
     "title": "在發問前，你要先知道...",
     "callToAction": {
       "featuredSessions": {
-        "description": "需要小編幫忙描述 featuredSessions ",
+        "description": "This year's IWD is all about women raising their voice. 2019 is the year of globalization- our goal is to support the Taiwanese women techmakers to confidently speak their truth so that they can be shine in the international space. We will be holding various activities including Action on Google code labs, Speechless, and #IamRemarkable",
         "label": "看看特選議程",
         "link": "https://www.youtube.com/playlist?list=PLt8lEzcLNl31AouwDkbLbLARlQFwNS2en"
       },
       "howItWas": {
-        "description": "需要小編幫忙描述 how IWD'19 was (目前放 speechless session 1",
-        "label": "See how it was in 2016",
+        "description": "Speechless:\nWe are bringing the popular workshop in Google I/O Mountain View to Taipei! Speechless is a fun 90 minute activity for women Techmakers to increase their confidence in speaking and in sharing their ideas.\n\n#IamRemarkable:\n#IamRemakable is a 90 minute workshop for Women Techmakers to raise their voice in the workplace and in life. It is an initiative by Google and has gained traction in all over 50+ countries.",
+        "label": "See how it was in 2018",
         "youtubeId": "HtVKipGdDR0"
       }
     },
